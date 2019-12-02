@@ -1,4 +1,47 @@
-#color {
+@font-face {
+    font-family: "quicksand";
+    src: "https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap"; }
+  
+  body {
+    font-family: 'Quicksand', sans-serif; }
+#dropdown-nav{
+    list-style: none;
+}
 
-    color: green;
-}  
+.navbar {
+    margin-top: 5px;
+    margin-bottom:  5px;
+    background:   #fff; }
+.navbar .imglogga {
+    height: 100;
+    width: 300px; }
+.navbar .imglogga .navbar-brand {
+    color: #212121;
+    cursor: pointer; }
+  
+.navbar-collapse {
+    justify-content: flex-end; }
+.navbar-collapse .nav-item {
+    margin-top: 10px; }
+.navbar-collapse .nav-item .nav-link {
+    color: #212121;
+    margin-right: 0px !important;
+    font-weight: bold; }
+.navbar-collapse .nav-item .nav-link .nav-link:hover {
+    color: #28A745; }
+
+.footer {
+    height: 60px;
+    bottom: 0;
+    width: 100%; }
+.footer-img {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    float: right; }
+.terms {
+    margin-right: 5px;
+    padding: 5px; }
+.SoMe {
+    float: right;
+}
