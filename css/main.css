@@ -56,11 +56,19 @@ font-family: 'Quicksand', sans-serif;
     color: #28A745; }
   body .navbar-nav {
     justify-content: flex-end; }
+  body .static-header img {
+    width: 100%; }
+  @media (min-width: 820px) {
+    body .static-header {
+      display: none; } }
   body .carousel_bloomit {
     margin-right: 0;
     margin-left: 0;
     padding-right: 0;
     padding-left: 0; }
+    @media (max-width: 820px) {
+      body .carousel_bloomit {
+        display: none; } }
   body .footer {
     height: 100px;
     bottom: 0;
@@ -101,7 +109,7 @@ font-family: 'Quicksand', sans-serif;
     body .navbar-collapse .nav-item .nav-link .nav-link:hover {
       color: #28A745; } }
 
-@media screen and (max-width: 800px) and (max-width: 600px) {
+@media screen and (max-width: 800px) and (max-width: 820px) {
   body .carousel_bloomit {
     display: none; } }
   @media screen and (max-width: 800px) {
