@@ -1,11 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "quicksand";
-  src: "https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap"; }
-
-body {
-  font-family: 'Quicksand', sans-serif; }
-
 .navbar-right {
   padding: 0;
   width: 100%;
@@ -64,28 +57,71 @@ body {
   display: flex;
   flex-direction: column; }
 
-.inspo-container {
-  width: 100%;
-  height: 150px; }
+@font-face {
+  font-family: "quicksand";
+  src: "https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap"; }
 
-.inspo-div {
-  height: 150px;
-  width: 100%;
-  display: table-cell;
-  background-color: red; }
-
-@media screen and (max-width: 800px) {
-  .myDiv {
-    width: 100%; } }
-
-@media screen and (max-width: 650px) {
-  .myDiv {
-    width: 100%; } }
-
-.terms {
-  margin-right: 5px;
-  padding: 5px; }
-
-.SoMe {
-  float: right;
-  margin-right: 10px; }
+body {
+  font-family: 'Quicksand', sans-serif; }
+  body .navbar {
+    padding: 0;
+    width: 100%;
+    background:   #e0ffff; }
+  body .main-nav {
+    padding: 0px;
+    margin: 0 auto;
+    width: 100%; }
+  body .navbar .imglogga {
+    height: 100;
+    width: 300px; }
+  body .navbar .imglogga .navbar-brand {
+    color: #212121;
+    cursor: pointer; }
+  body .navbar-collapse {
+    justify-content: flex-end; }
+  body .navbar-collapse .nav-item {
+    margin-top: 10px; }
+  body .navbar-collapse .nav-item .nav-link {
+    color: #212121;
+    margin-right: 0px !important;
+    font-weight: bold; }
+  body .navbar-collapse .nav-item .nav-link .nav-link:hover {
+    color: #28A745; }
+  @media (max-width: 600px) {
+    body .carousel_bloomit {
+      display: none; } }
+  body .footer {
+    height: 100px;
+    bottom: 0;
+    width: 100%; }
+  body .footer-fluid {
+    height: 100px;
+    background-color: #e0ffff;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column; }
+  body .inspo-container {
+    width: 100%;
+    height: 150px; }
+  body .inspo-div {
+    height: 150px;
+    width: 100%;
+    display: table-cell;
+    background-color: red; }
+  @media screen and (max-width: 800px) {
+    body .myDiv {
+      width: 100%; } }
+  @media screen and (max-width: 650px) {
+    body .myDiv {
+      width: 100%; } }
+  body .terms {
+    margin-right: 5px;
+    padding: 5px; }
+  body .SoMe {
+    float: right;
+    margin-right: 10px; }
