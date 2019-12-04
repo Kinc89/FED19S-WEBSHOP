@@ -76,11 +76,14 @@ font-family: 'Quicksand', sans-serif;
     margin: 0px;
     display: flex;
     flex-direction: column; }
-  body .img-container {
-    height: 400px; }
-    body .img-container .inspoimg {
-      height: 400px;
-      background-color: green; }
+  body .imgcontainer {
+    margin-top: 40px;
+    margin-bottom: 40px; }
+    body .imgcontainer .imgWrapper {
+      padding: 0;
+      background: #e0ffff; }
+      body .imgcontainer .imgWrapper .inspoimg {
+        width: 100%; }
   @media screen and (max-width: 800px) {
     body .myDiv {
       width: 100%; }
