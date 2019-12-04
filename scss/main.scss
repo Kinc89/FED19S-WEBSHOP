@@ -1,3 +1,10 @@
+$navbarBG: #e0ffff;
+$inspoimg: pink;
+$footerBG: #e0ffff;
+
+
+
+
 @font-face {
     font-family: "quicksand";
     src: "https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap"; }
@@ -7,15 +14,13 @@
     
 }
 
-
-
 // Navbar
 .navbar {
     // margin-top: 5px;
     // margin-bottom:  5px;
     padding: 0;
     width: 100%;
-    background:   #e0ffff; 
+    background: $navbarBG;
 }
 .main-nav {
     padding: 0px;
@@ -63,7 +68,7 @@
 }
 .footer-fluid {
     height: 100px;
-    background-color: #e0ffff;
+    background-color: $footerBG;
     position: relative;
     left: 0;
     bottom: 0;
@@ -75,7 +80,15 @@
 }
 // Inspocontainer & Div
 
-.inspo-container {
+.img-container {
+    height: 400px;
+.inspoimg {
+    height: 400px;
+    background-color: pink;
+}
+}
+
+/* .inspo-container {
     width: 100%;
     height: 150px;
     
@@ -87,7 +100,8 @@
     display: table-cell;
     background-color: red;
 
-}
+}*/
+
 @media screen and (max-width: 800px) {
 	.myDiv {
         width: 100%;
