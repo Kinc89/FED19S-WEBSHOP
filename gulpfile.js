@@ -9,10 +9,16 @@ gulp.task('sass', function(cb) {
     .src('scss/*.scss')
     
     .pipe(sass())
-    .pipe(cleanCSS())
-    .pipe(rename({
-      suffix: ".min"
-    }))
+    // .pipe(cleanCSS())
+    // .pipe(rename({
+    //   suffix: ".css"
+      
+    // }))
+    // .pipe(rename({
+    //   suffix: ".min"
+      
+    // }))
+    
     .pipe(
       gulp.dest("css")
       )
