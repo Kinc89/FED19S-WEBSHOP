@@ -13,7 +13,7 @@ body {
   body .navbar-right {
     padding: 0;
     width: 100%;
-    background: #e0ffff; }
+    background: white; }
   body .main-nav {
     padding: 0;
     margin: 0 auto;
@@ -44,24 +44,109 @@ body {
     justify-content: flex-end; }
   body .static-header img {
     width: 100%; }
-  @media (min-width: 820px) {
+  @media (min-width: 1200px) {
     body .static-header {
       display: none; } }
+  body .carusel_h1 {
+    position: absolute;
+    right: 3%;
+    z-index: 10;
+    top: 15%;
+    color: #474747;
+    font-size: 25px; }
+    @media (min-width: 600px) {
+      body .carusel_h1 {
+        font-size: 30px;
+        right: 7%;
+        top: 18%; } }
+    @media (min-width: 820px) {
+      body .carusel_h1 {
+        font-size: 40px;
+        right: 8%;
+        top: 20%; } }
+    @media (min-width: 1200px) {
+      body .carusel_h1 {
+        font-size: 50px;
+        right: 11%;
+        top: 32%; } }
+  body .carusel_p {
+    position: absolute;
+    text-align: center;
+    right: 6%;
+    z-index: 10;
+    top: 21%;
+    color: #474747;
+    font-size: 10px; }
+    @media (min-width: 600px) {
+      body .carusel_p {
+        font-size: 15px;
+        right: 5%;
+        top: 25%; } }
+    @media (min-width: 820px) {
+      body .carusel_p {
+        font-size: 22px;
+        right: 6%;
+        top: 28%; } }
+    @media (min-width: 1200px) {
+      body .carusel_p {
+        font-size: 23px;
+        right: 11%;
+        top: 43%; } }
+  body .headerBtn {
+    position: absolute;
+    width: 80px;
+    font-size: 11px;
+    z-index: 10;
+    right: 10%;
+    top: 26%; }
   body .carousel_bloomit {
+    position: relative;
     margin-right: 0;
     margin-left: 0;
     padding: 0; }
-    @media (max-width: 820px) {
+    @media (max-width: 600px) {
+      body .carousel_bloomit {
+        display: none; } }
+    @media (min-width: 600px) {
+      body .carousel_bloomit {
+        display: none; } }
+    @media (min-width: 820px) {
       body .carousel_bloomit {
         display: none; } }
   body .bloomitInfo {
     padding-right: 10px; }
+    @media (min-width: 1200px) {
+      body .carousel_bloomit {
+        display: inline; } }
+  body .footer {
+    height: 100px;
+    bottom: 0;
+    width: 100%; }
+  body .footer-fluid {
+    height: 100px;
+    background-color: #dadada;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column; }
+  body .section-content {
+    background-color: #dadada; }
+    body .section-content .content-box {
+      height: 100%; }
+      body .section-content .content-box .icon {
+        margin-top: 20px;
+        font-size: 40pt;
+        margin-left: 18pt; }
   body .imgcontainer {
     margin-top: 40px;
     margin-bottom: 40px; }
     body .imgcontainer .imgWrapper {
       padding: 0;
-      background: #e0ffff; }
+      padding: 5px; }
       body .imgcontainer .imgWrapper .inspoimg {
         width: 100%; }
   @media (max-width: 820px) {
@@ -79,3 +164,72 @@ body {
     position: relative; }
   body .footerlogo {
     width: 100%; }
+    body .imgcontainer .shopbtn {
+      width: 170px;
+      font-size: 16pt; }
+  body .contentcontainer {
+    text-align: center; }
+    body .contentcontainer span {
+      margin: 5px; }
+  @media screen and (max-width: 800px) {
+    body .myDiv {
+      width: 100%; }
+    body .navbar .imglogga {
+      height: 100;
+      width: 300px; }
+    body .navbar .imglogga .navbar-brand {
+      color: #212121;
+      cursor: pointer; }
+    body .navbar-collapse {
+      justify-content: flex-end; }
+    body .navbar-collapse .nav-item {
+      margin-top: 10px; }
+    body .navbar-collapse .nav-item .nav-link {
+      color: #212121;
+      margin-right: 0px !important;
+      font-weight: bold; }
+    body .navbar-collapse .nav-item .nav-link .nav-link:hover {
+      color: #28A745; } }
+
+@media screen and (max-width: 800px) and (max-width: 600px) {
+  body .carousel_bloomit {
+    display: none; } }
+  @media screen and (max-width: 800px) {
+    body .footer {
+      height: 100px;
+      bottom: 0;
+      width: 100%; }
+    body .footer-fluid {
+      height: 100px;
+      background-color: red;
+      position: relative;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      margin: 0px;
+      display: flex;
+      flex-direction: column; }
+    body .inspo-container {
+      width: 100%;
+      height: 150px; }
+    body .inspo-div {
+      height: 150px;
+      width: 100%;
+      display: table-cell;
+      background-color: red; } }
+
+@media screen and (max-width: 800px) and (max-width: 800px) {
+  body .myDiv {
+    width: 100%; } }
+
+@media screen and (max-width: 800px) and (max-width: 650px) {
+  body .myDiv {
+    width: 100%; } }
+  @media screen and (max-width: 800px) {
+    body .terms {
+      margin-right: 5px;
+      padding: 5px; }
+    body .SoMe {
+      float: right;
+      margin-right: 10px; } }
