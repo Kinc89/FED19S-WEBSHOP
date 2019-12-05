@@ -1,6 +1,7 @@
 $navbarBG: #e0ffff;
 $inspoimg: pink;
 $footerBG: #e0ffff;
+$headerTextColor: rgb(71, 71, 71);
  
 @font-face {
     font-family: "quicksand";
@@ -10,7 +11,10 @@ $footerBG: #e0ffff;
     font-family: 'Quicksand', sans-serif; 
      
 @mixin phone {
-    @media (max-width: 820px) { @content; }    
+    @media (max-width: 600px) { @content; }    
+}
+@mixin mini-tablet {
+    @media (min-width: 600px) { @content; }    
 }
 @mixin tablet {
     @media (min-width: 820px) { @content; }    
@@ -63,21 +67,89 @@ $footerBG: #e0ffff;
     img {
         width: 100%;
     }
-    @include tablet{
+    @include desktop{
         display: none;
     }
 }
 
+.carusel_h1{
+    position: absolute;
+    right: 3%;
+    z-index: 10;
+    top: 15%;
+    color:$headerTextColor;
+    font-size: 25px;
+    @include mini-tablet{
+        font-size: 30px;
+        right: 7%;
+        top: 18%;
+    }
+    @include tablet{
+        font-size: 40px;
+        right: 8%;
+        top: 20%;
+    }
+    @include desktop{
+        font-size: 50px;
+        right: 11%;
+        top: 32%;
+    }
+}
+.carusel_p{
+    position: absolute;
+    text-align: center;
+    right: 6%;
+    z-index: 10;
+    top: 21%;
+    color:$headerTextColor;
+    font-size: 10px;
+    @include mini-tablet{
+        font-size: 15px;
+        right: 5%;
+        top: 25%;
+    }
+    @include tablet{
+        font-size: 22px;
+        right: 6%;
+        top: 28%;
+    }
+    @include desktop{
+        font-size: 23px;
+        right: 11%;
+        top: 43%;
+    }
+
+}
+
+.headerBtn{
+    position: absolute;
+    width: 80px;
+    font-size: 11px;
+    z-index: 10;
+    right: 10%;
+    top: 26%;
+}
+
     // Carousel
 .carousel_bloomit {
+    position: relative;
     margin-right: 0;
     margin-left: 0;
     padding: 0;
     @include phone{
         display: none;
     }
-    
+    @include mini-tablet{
+        display: none;
+    }  
+    @include tablet{
+        display: none;
+    }
+    @include desktop{
+        display: inline;
+    }
 }
+
 .footer {
     height: 100px;
     bottom: 0;
