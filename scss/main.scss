@@ -1,6 +1,10 @@
-$navbarBG: #e0ffff;
+$navbarBG: white;
 $inspoimg: pink;
-$footerBG: #e0ffff;
+$footerBG: rgb(218, 218, 218);
+$red: red;
+$green: green;
+$blue: blue;
+
  
 @font-face {
     font-family: "quicksand";
@@ -113,7 +117,22 @@ $footerBG: #e0ffff;
 }
 // Inspocontainer & Div
 
+.section-content {
+    background-color: $footerBG;
+    
+    .content-box {
+        height: 100%;
 
+        .icon {
+            margin-top: 20px;
+            font-size: 40pt;
+            margin-left: 18pt;
+       
+        }
+
+    }
+   
+}
 
 
 .imgcontainer {

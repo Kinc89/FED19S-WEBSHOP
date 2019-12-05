@@ -35,7 +35,7 @@ font-family: 'Quicksand', sans-serif;
   body .navbar-right {
     padding: 0;
     width: 100%;
-    background: #e0ffff; }
+    background: white; }
   body .main-nav {
     padding: 0;
     margin: 0 auto;
@@ -82,7 +82,7 @@ font-family: 'Quicksand', sans-serif;
     width: 100%; }
   body .footer-fluid {
     height: 100px;
-    background-color: #e0ffff;
+    background-color: #dadada;
     position: relative;
     left: 0;
     bottom: 0;
@@ -91,6 +91,14 @@ font-family: 'Quicksand', sans-serif;
     margin: 0px;
     display: flex;
     flex-direction: column; }
+  body .section-content {
+    background-color: #dadada; }
+    body .section-content .content-box {
+      height: 100%; }
+      body .section-content .content-box .icon {
+        margin-top: 20px;
+        font-size: 40pt;
+        margin-left: 18pt; }
   body .imgcontainer {
     margin-top: 40px;
     margin-bottom: 40px; }
