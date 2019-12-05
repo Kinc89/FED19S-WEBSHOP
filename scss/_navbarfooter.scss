@@ -1,5 +1,7 @@
 // Navbar
 $navbarBG: white;
+$footerBG: #d3d3d3;;
+$footerBG2: rgb(39, 38, 38);
 
 .main-nav {
     position: relative;
@@ -29,6 +31,51 @@ $navbarBG: white;
             .nav-link {
                 text-align: end;
             }
+        }
+    }
+}
+
+ //Footer
+    
+.footerinfo {
+    background-color: $footerBG;
+
+    .bloomitInfo{
+        padding-right: 10px;
+    }
+
+    .footerlogodiv {
+        text-align: center;
+        margin-bottom: 15px;
+        .footerlogo{
+            width: 50%;
+        }
+    }
+}
+
+footer {
+    background-color: $footerBG2;
+
+    .footerlinks {
+        background-color: $footerBG2;
+
+        .terms {
+            margin-right: 5px;
+            padding: 5px; 
+        }
+
+        .soMe_container{
+            display: flex;
+            justify-content: end;
+        
+            .SoMe {
+                margin-right: 10px;
+            }
+        }
+
+        #footer_container {
+            position: relative;
+            background-color: $footerBG2;
         }
     }
 }

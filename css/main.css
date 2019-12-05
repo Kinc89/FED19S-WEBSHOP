@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .main-nav {
   position: relative;
   margin: 0 auto;
@@ -21,173 +20,158 @@
       .main-nav .navbar-right .nav-item .nav-link {
         text-align: end; }
 
-@font-face {
-  font-family: "quicksand";
-  src: "https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap"; }
+.footerinfo {
+  background-color: #d3d3d3; }
+  .footerinfo .bloomitInfo {
+    padding-right: 10px; }
+  .footerinfo .footerlogodiv {
+    text-align: center;
+    margin-bottom: 15px; }
+    .footerinfo .footerlogodiv .footerlogo {
+      width: 50%; }
+
+footer {
+  background-color: #272626; }
+  footer .footerlinks {
+    background-color: #272626; }
+    footer .footerlinks .terms {
+      margin-right: 5px;
+      padding: 5px; }
+    footer .footerlinks .soMe_container {
+      display: flex;
+      justify-content: end; }
+      footer .footerlinks .soMe_container .SoMe {
+        margin-right: 10px; }
+    footer .footerlinks #footer_container {
+      position: relative;
+      background-color: #272626; }
+
+#caruselContainer {
+  position: absolute;
+  right: 2%;
+  z-index: 10;
+  top: 12%;
+  color: #383737;
+  text-align: center;
+  width: 54%; }
+  @media (min-width: 600px) {
+    #caruselContainer {
+      top: 14%;
+      right: 1%;
+      width: 56%; } }
+  @media (min-width: 820px) {
+    #caruselContainer {
+      top: 7%;
+      right: 2%;
+      width: 55%; } }
+  @media (min-width: 820px) {
+    #caruselContainer {
+      top: 20%;
+      right: 1%;
+      width: 55%; } }
+  @media (min-width: 1200px) {
+    #caruselContainer {
+      top: 32%; } }
+  #caruselContainer .carusel_h1 {
+    font-size: 20pt; }
+    @media (min-width: 600px) {
+      #caruselContainer .carusel_h1 {
+        font-size: 40px; } }
+    @media (min-width: 820px) {
+      #caruselContainer .carusel_h1 {
+        font-size: 40px; } }
+    @media (min-width: 1200px) {
+      #caruselContainer .carusel_h1 {
+        font-size: 50px; } }
+  #caruselContainer .carusel_p {
+    font-size: 12pt; }
+    @media (min-width: 600px) {
+      #caruselContainer .carusel_p {
+        font-size: 16pt; } }
+    @media (min-width: 820px) {
+      #caruselContainer .carusel_p {
+        font-size: 22px;
+        width: 60%;
+        position: absolute;
+        right: 20%; } }
+    @media (min-width: 1200px) {
+      #caruselContainer .carusel_p {
+        font-size: 28px;
+        width: 70%;
+        right: 15%; } }
+  #caruselContainer .headerBtn {
+    font-size: 12pt;
+    padding: 2px;
+    width: 80px;
+    color: #383737;
+    border: 2px solid; }
+    @media (min-width: 600px) {
+      #caruselContainer .headerBtn {
+        font-size: 14pt;
+        width: 100px; } }
+    @media (min-width: 820px) {
+      #caruselContainer .headerBtn {
+        position: absolute;
+        top: 300%; } }
+
+.static-header img {
+  width: 100%; }
+
+@media (min-width: 1200px) {
+  .static-header {
+    display: none; } }
+
+.carousel_bloomit {
+  position: relative;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0; }
+  @media (max-width: 600px) {
+    .carousel_bloomit {
+      display: none; } }
+  @media (min-width: 600px) {
+    .carousel_bloomit {
+      display: none; } }
+  @media (min-width: 820px) {
+    .carousel_bloomit {
+      display: none; } }
+  @media (min-width: 1200px) {
+    .carousel_bloomit {
+      display: inline; } }
+
+.section-content {
+  background-color: #d3d3d3; }
+  .section-content .content-box {
+    height: 100%; }
+    .section-content .content-box .icon {
+      font-size: 30pt; }
+    .section-content .content-box h6 {
+      font-size: 12pt; }
+    .section-content .content-box p {
+      font-size: 10pt; }
+
+body .imgcontainer {
+  margin-top: 5px;
+  margin-bottom: 10px; }
+  @media (min-width: 820px) {
+    body .imgcontainer {
+      margin-top: 20px; } }
+  body .imgcontainer .imgWrapper {
+    padding: 0;
+    padding: 5px; }
+    body .imgcontainer .imgWrapper .inspoimg {
+      width: 100%; }
+  body .imgcontainer .shopbtn {
+    width: 170px;
+    font-size: 16pt; }
 
 body {
   font-family: 'Quicksand', sans-serif;
-  /* .inspo-container {
-    width: 100%;
-    height: 150px;
-    
-@font-face {
-    font-family: "quicksand";
-    src: "https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap"; 
-}
-  
-body {
-font-family: 'Quicksand', sans-serif; 
-
-    // Navbar
-    .navbar {
-        // margin-top: 5px;
-        // margin-bottom:  5px;
-        padding: 0;
-        width: 100%;
-        background:   #e0ffff; 
-    }
-    .main-nav {
-        padding: 0px;
-        margin: 0 auto;
-
-}*/ }
+  margin: 0;
+  padding: 0; }
   body a {
     color: rgba(119, 118, 118, 0.87); }
     body a :hover {
       color: #272626; }
-  body .headerBtn {
-    position: absolute;
-    width: 80px;
-    font-size: 11px;
-    z-index: 10;
-    right: 10%;
-    top: 26%; }
-  body .static-header img {
-    width: 100%; }
-  @media (min-width: 1200px) {
-    body .static-header {
-      display: none; } }
-  body .carusel_h1 {
-    position: absolute;
-    right: 3%;
-    z-index: 10;
-    top: 15%;
-    color: #474747;
-    font-size: 25px; }
-    @media (min-width: 600px) {
-      body .carusel_h1 {
-        font-size: 30px;
-        right: 7%;
-        top: 18%; } }
-    @media (min-width: 820px) {
-      body .carusel_h1 {
-        font-size: 40px;
-        right: 8%;
-        top: 20%; } }
-    @media (min-width: 1200px) {
-      body .carusel_h1 {
-        font-size: 50px;
-        right: 11%;
-        top: 32%; } }
-  body .carusel_p {
-    position: absolute;
-    text-align: center;
-    right: 6%;
-    z-index: 10;
-    top: 21%;
-    color: #474747;
-    font-size: 10px; }
-    @media (min-width: 600px) {
-      body .carusel_p {
-        font-size: 15px;
-        right: 5%;
-        top: 25%; } }
-    @media (min-width: 820px) {
-      body .carusel_p {
-        font-size: 22px;
-        right: 6%;
-        top: 28%; } }
-    @media (min-width: 1200px) {
-      body .carusel_p {
-        font-size: 23px;
-        right: 11%;
-        top: 43%; } }
-  body .carousel_bloomit {
-    position: relative;
-    margin-right: 0;
-    margin-left: 0;
-    padding: 0; }
-    @media (max-width: 600px) {
-      body .carousel_bloomit {
-        display: none; } }
-    @media (min-width: 600px) {
-      body .carousel_bloomit {
-        display: none; } }
-    @media (min-width: 820px) {
-      body .carousel_bloomit {
-        display: none; } }
-    @media (min-width: 1200px) {
-      body .carousel_bloomit {
-        display: inline; } }
-  body .section-content {
-    background-color: #dadada; }
-    body .section-content .content-box {
-      height: 100%; }
-      body .section-content .content-box .icon {
-        margin-top: 20px;
-        font-size: 40pt;
-        margin-left: 18pt; }
-  body .imgcontainer {
-    margin-top: 40px;
-    margin-bottom: 40px; }
-    body .imgcontainer .imgWrapper {
-      padding: 0;
-      padding: 5px; }
-      body .imgcontainer .imgWrapper .inspoimg {
-        width: 100%; }
-    body .imgcontainer .shopbtn {
-      width: 170px;
-      font-size: 16pt; }
   body .contentcontainer {
     text-align: center; }
-    body .contentcontainer span {
-      margin: 5px; }
-  @media screen and (max-width: 800px) {
-    body .myDiv {
-      width: 100%; }
-    body .navbar .imglogga {
-      height: 100;
-      width: 300px; }
-    body .navbar .imglogga .navbar-brand {
-      color: #212121;
-      cursor: pointer; }
-    body .navbar-collapse {
-      justify-content: flex-end; }
-    body .navbar-collapse .nav-item {
-      margin-top: 10px; }
-    body .navbar-collapse .nav-item .nav-link {
-      color: #212121;
-      margin-right: 0px !important;
-      font-weight: bold; }
-    body .navbar-collapse .nav-item .nav-link .nav-link:hover {
-      color: #28A745; } }
-
-@media screen and (max-width: 800px) and (max-width: 600px) {
-  body .carousel_bloomit {
-    display: none; } }
-  @media screen and (max-width: 800px) {
-    body .terms {
-      margin-right: 5px;
-      padding: 5px; }
-    body .SoMe {
-      margin-right: 10px; }
-    body .soMe_container {
-      display: flex;
-      justify-content: end; }
-    body #footer_container {
-      position: relative; }
-    body .footerlogo {
-      width: 100%; } }
-  body .bloomitInfo {
-    padding-right: 10px; }
