@@ -88,9 +88,16 @@ font-family: 'Quicksand', sans-serif;
     margin-bottom: 40px; }
     body .imgcontainer .imgWrapper {
       padding: 0;
-      background: #e0ffff; }
+      padding: 5px; }
       body .imgcontainer .imgWrapper .inspoimg {
         width: 100%; }
+    body .imgcontainer .shopbtn {
+      width: 170px;
+      font-size: 16pt; }
+  body .contentcontainer {
+    text-align: center; }
+    body .contentcontainer span {
+      margin: 5px; }
   @media screen and (max-width: 800px) {
     body .myDiv {
       width: 100%; }

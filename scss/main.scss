@@ -109,15 +109,27 @@ $footerBG: #e0ffff;
 
 .imgWrapper {
     padding: 0;
-    background: $navbarBG;
+    padding: 5px;
     
 
     .inspoimg {
         width: 100%;
     }
 }
+.shopbtn {
+    width: 170px;
+    font-size: 16pt;
 }
 
+}
+
+.contentcontainer {
+text-align: center;
+
+    span {
+        margin:5px;
+    }
+}
 
 /* .inspo-container {
     width: 100%;
