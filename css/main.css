@@ -1,4 +1,26 @@
 @charset "UTF-8";
+.main-nav {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 15px;
+  margin-top: 10px; }
+  .main-nav .navbar-right {
+    width: 100%;
+    background: white; }
+    .main-nav .navbar-right .navbar-nav {
+      justify-content: flex-end; }
+    .main-nav .navbar-right .nav-img {
+      height: 30px;
+      padding-top: 3px;
+      display: flex;
+      position: absolute;
+      left: 2%; }
+    .main-nav .navbar-right .nav-item {
+      padding-right: 15px; }
+      .main-nav .navbar-right .nav-item .nav-link {
+        text-align: end; }
+
 @font-face {
   font-family: "quicksand";
   src: "https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap"; }
@@ -33,7 +55,14 @@ font-family: 'Quicksand', sans-serif;
   body a {
     color: rgba(119, 118, 118, 0.87); }
     body a :hover {
-      color: red; }
+      color: #272626; }
+  body .headerBtn {
+    position: absolute;
+    width: 80px;
+    font-size: 11px;
+    z-index: 10;
+    right: 10%;
+    top: 26%; }
   body .static-header img {
     width: 100%; }
   @media (min-width: 1200px) {
@@ -84,13 +113,6 @@ font-family: 'Quicksand', sans-serif;
         font-size: 23px;
         right: 11%;
         top: 43%; } }
-  body .headerBtn {
-    position: absolute;
-    width: 80px;
-    font-size: 11px;
-    z-index: 10;
-    right: 10%;
-    top: 26%; }
   body .carousel_bloomit {
     position: relative;
     margin-right: 0;
@@ -108,8 +130,6 @@ font-family: 'Quicksand', sans-serif;
     @media (min-width: 1200px) {
       body .carousel_bloomit {
         display: inline; } }
-  body .bloomitInfo {
-    padding-right: 10px; }
   body .section-content {
     background-color: #dadada; }
     body .section-content .content-box {
@@ -169,3 +189,5 @@ font-family: 'Quicksand', sans-serif;
       position: relative; }
     body .footerlogo {
       width: 100%; } }
+  body .bloomitInfo {
+    padding-right: 10px; }
