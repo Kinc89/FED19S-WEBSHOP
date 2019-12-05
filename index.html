@@ -31,7 +31,7 @@
                 <a class="nav-link" href="#">Kontakt</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Produktlista</a>
+                <a class="nav-link" href="#">Shop</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#varukorg.html">
@@ -97,28 +97,44 @@
         </div>
     </div>
 </div>
-
-
-<!-- Container som är tänkt att spana över hela sidan -->
-<!--<div class="inspo-container"> 
-    <!-- Dessa 4 skall täcka 25% var, jag får inte riktigt till det, kolla scss-filen på dessa två classer och lura på'n :) -
-    <div class="inspo-div">Hej</div>
-    <div class="inspo-div">Hej2</div>
-    <div class="inspo-div">Hej3</div>
-    <div class="inspo-div">Hej4</div>
-</div>-->
-
 <!--FOOTER-->
 
 
 <!-- Footern är nu relative (absolute gjorde så att resten av sidan trillar bakom. Det kan köras om vi har en fast offset-margin som puttar allt upp från den)
 Footern behöver dock göras större, och fästas längst ner. -->
 <footer class="footer-fluid">
-        <div class="container footer_bloomit">
-            <div class="row py-3">
-                <div class="col-12 col-md-3 col-lg-12">
+        <div class="container footerinfo">
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-4">
+                    <div class="bloomitInfo">
+                        <p><b>Bloomit</b><br>
+                            We who run Bloomit have a great deal of experience from a flower shop, which means that we have developed and customized our webshop and customer service so that it is complete for both consumer and shop. We know a great deal about flowers and service and this makes us unique from our competitors.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4">
+                    <b>Contact</b>
+                    <div>
+                    <p>Bloomit AB<br>
+                    Agatvägen 18<br>
+                    16860 BROMMA</p>
+                    </div>
+                </div>
+                
+            
+    
+                <div class="col-12 col-md-4 col-lg-4">
+                    <img class="footerlogo" src="img/logga img/BLOOMIT_flower_logo.png">
+                </div>
+            </div>
+        </div>
+        <div class="container footerlinks">
+            <div class="row p-3" id="footer_container">
+                <div class="col-9">
                     <a href="#" class="terms"><u>Användarvillkor</u></a>
                     <a href="#" class="terms"><u>Sekretessvillkor</u></a>
+                </div>
+                <div class="col-3 soMe_container">
                     <a href="http://www.facebook.com" class="SoMe">
                         <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
                     </a>
