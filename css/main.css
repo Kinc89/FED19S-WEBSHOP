@@ -1,35 +1,13 @@
-@charset "UTF-8";
 @font-face {
   font-family: "quicksand";
   src: "https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap"; }
 
 body {
-  font-family: 'Quicksand', sans-serif;
-  /* .inspo-container {
-    width: 100%;
-    height: 150px;
-    
-@font-face {
-    font-family: "quicksand";
-    src: "https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap"; 
-}
-  
-body {
-font-family: 'Quicksand', sans-serif; 
-
-    // Navbar
-    .navbar {
-        // margin-top: 5px;
-        // margin-bottom:  5px;
-        padding: 0;
-        width: 100%;
-        background:   #e0ffff; 
-    }
-    .main-nav {
-        padding: 0px;
-        margin: 0 auto;
-
-}*/ }
+  font-family: 'Quicksand', sans-serif; }
+  body a {
+    color: rgba(119, 118, 118, 0.87); }
+    body a :hover {
+      color: red; }
   body #nav-container {
     position: relative; }
   body .navbar-right {
@@ -76,21 +54,8 @@ font-family: 'Quicksand', sans-serif;
     @media (max-width: 820px) {
       body .carousel_bloomit {
         display: none; } }
-  body .footer {
-    height: 100px;
-    bottom: 0;
-    width: 100%; }
-  body .footer-fluid {
-    height: 100px;
-    background-color: #e0ffff;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    margin: 0px;
-    display: flex;
-    flex-direction: column; }
+  body .bloomitInfo {
+    padding-right: 10px; }
   body .imgcontainer {
     margin-top: 40px;
     margin-bottom: 40px; }
@@ -99,65 +64,18 @@ font-family: 'Quicksand', sans-serif;
       background: #e0ffff; }
       body .imgcontainer .imgWrapper .inspoimg {
         width: 100%; }
-  @media screen and (max-width: 800px) {
-    body .myDiv {
-      width: 100%; }
-    body .navbar .imglogga {
-      height: 100;
-      width: 300px; }
-    body .navbar .imglogga .navbar-brand {
-      color: #212121;
-      cursor: pointer; }
-    body .navbar-collapse {
-      justify-content: flex-end; }
-    body .navbar-collapse .nav-item {
-      margin-top: 10px; }
-    body .navbar-collapse .nav-item .nav-link {
-      color: #212121;
-      margin-right: 0px !important;
-      font-weight: bold; }
-    body .navbar-collapse .nav-item .nav-link .nav-link:hover {
-      color: #28A745; } }
-
-@media screen and (max-width: 800px) and (max-width: 820px) {
-  body .carousel_bloomit {
-    display: none; } }
-  @media screen and (max-width: 800px) {
-    body .footer {
-      height: 100px;
-      bottom: 0;
-      width: 100%; }
-    body .footer-fluid {
-      height: 100px;
-      background-color: red;
-      position: relative;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      width: 100%;
-      margin: 0px;
-      display: flex;
-      flex-direction: column; }
-    body .inspo-container {
-      width: 100%;
-      height: 150px; }
-    body .inspo-div {
-      height: 150px;
-      width: 100%;
-      display: table-cell;
-      background-color: red; } }
-
-@media screen and (max-width: 800px) and (max-width: 800px) {
-  body .myDiv {
-    width: 100%; } }
-
-@media screen and (max-width: 800px) and (max-width: 650px) {
-  body .myDiv {
-    width: 100%; } }
-  @media screen and (max-width: 800px) {
-    body .terms {
-      margin-right: 5px;
-      padding: 5px; }
-    body .SoMe {
-      float: right;
-      margin-right: 10px; } }
+  @media (max-width: 820px) {
+    body .carousel_bloomit {
+      display: none; } }
+  body .terms {
+    margin-right: 5px;
+    padding: 5px; }
+  body .SoMe {
+    margin-right: 10px; }
+  body .soMe_container {
+    display: flex;
+    justify-content: end; }
+  body #footer_container {
+    position: relative; }
+  body .footerlogo {
+    width: 100%; }
