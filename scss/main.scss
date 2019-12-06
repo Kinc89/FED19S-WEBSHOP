@@ -49,3 +49,122 @@ body {
      
    
 }
+
+
+.imgcontainer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+.imgWrapper {
+    padding: 0;
+    padding: 5px;
+    
+
+    .inspoimg {
+        width: 100%;
+    }
+}
+.shopbtn {
+    width: 170px;
+    font-size: 16pt;
+}
+
+}
+
+.contentcontainer {
+text-align: center;
+
+    span {
+        margin:5px;
+    }
+}
+
+/* .inspo-container {
+    width: 100%;
+    height: 150px;
+    
+@font-face {
+    font-family: "quicksand";
+    src: "https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap"; 
+}
+  
+body {
+font-family: 'Quicksand', sans-serif; 
+
+    // Navbar
+    .navbar {
+        // margin-top: 5px;
+        // margin-bottom:  5px;
+        padding: 0;
+        width: 100%;
+        background:   #e0ffff; 
+    }
+    .main-nav {
+        padding: 0px;
+        margin: 0 auto;
+
+}*/
+
+@media screen and (max-width: 800px) {
+	.myDiv {
+        width: 100%;
+    }
+    .navbar .imglogga {
+        height: 100;
+        width: 300px; 
+    }
+    .navbar .imglogga .navbar-brand {
+        color: #212121;
+        cursor: pointer; 
+    }
+
+    .navbar-collapse {
+        justify-content: flex-end; 
+    }
+    .navbar-collapse .nav-item {
+        margin-top: 10px; 
+    }
+    .navbar-collapse .nav-item .nav-link {
+        color: #212121;
+        margin-right: 0px !important;
+        font-weight: bold; 
+    }
+    .navbar-collapse .nav-item .nav-link .nav-link:hover {
+        color: #28A745; 
+    }
+        // Carousel
+    .carousel_bloomit {  
+        @include phone{
+            display: none;
+        }
+       
+        
+    }
+    .terms {
+        margin-right: 5px;
+        padding: 5px; }
+    .SoMe {
+        margin-right: 10px;
+    }
+    .soMe_container{
+        display: flex;
+        justify-content: end;
+        // margin-right: 2%;
+        // position: absolute;
+    }
+    #footer_container {
+        position: relative;
+    }
+    .footerlogo{
+        width: 100%;
+    }
+}
+.bloomitInfo{
+    padding-right: 10px;
+}
+
+
+// #products {
+
+      
+// }
