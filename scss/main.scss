@@ -1,5 +1,7 @@
 @import "navbarfooter.scss";
 @import "header.scss";
+@import "deliveryinfo.scss";
+@import "inspoimg.scss";
 
 // fråga sebastian om hur man har mixin i egen scss
 @mixin phone {
@@ -17,21 +19,20 @@
 
 $navbarBG: white;
 $inspoimg: pink;
-$footerBG: #e0ffff;
+$footerBG: #d3d3d3;;
 $linkcolor: rgba(119, 118, 118, 0.87);
 $linkhover: rgb(39, 38, 38);
-$headerTextColor: rgb(71, 71, 71);
-$footerBG: rgb(218, 218, 218);
+$headerTextColor: rgb(56, 55, 55);
 $red: red;
 $green: green;
 $blue: blue;
+$footerBG2: rgb(39, 38, 38);
 
-@font-face {
-    font-family: "quicksand";
-    src: "https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap"; }
-  
+
 body {
     font-family: 'Quicksand', sans-serif; 
+    margin:0;
+    padding: 0;
 
     a {
         color: $linkcolor;
@@ -40,115 +41,12 @@ body {
             color: $linkhover;
         }   
     }
-    // Header
-    .headerBtn{
-        position: absolute;
-        width: 80px;
-        font-size: 11px;
-        z-index: 10;
-        right: 10%;
-        top: 26%;
+
+    //Content about us
+    .contentcontainer {
+        text-align: center; 
     }
-
-    .static-header {
-        img {
-            width: 100%;
-        }
-        @include desktop{
-            display: none;
-        }
-    }
-
-    // Carousel
-    .carusel_h1{
-        position: absolute;
-        right: 3%;
-        z-index: 10;
-        top: 15%;
-        color:$headerTextColor;
-        font-size: 25px;
-
-        @include mini-tablet{
-            font-size: 30px;
-            right: 7%;
-            top: 18%;
-        }
-        @include tablet{
-            font-size: 40px;
-            right: 8%;
-            top: 20%;
-        }
-        @include desktop{
-            font-size: 50px;
-            right: 11%;
-            top: 32%;
-        }
-    }
-
-    .carusel_p{
-        position: absolute;
-        text-align: center;
-        right: 6%;
-        z-index: 10;
-        top: 21%;
-        color:$headerTextColor;
-        font-size: 10px;
-
-        @include mini-tablet{
-            font-size: 15px;
-            right: 5%;
-            top: 25%;
-        }
-        @include tablet{
-            font-size: 22px;
-            right: 6%;
-            top: 28%;
-        }
-        @include desktop{
-            font-size: 23px;
-            right: 11%;
-            top: 43%;
-        }
-    }
-
-    .carousel_bloomit {
-        position: relative;
-        margin-right: 0;
-        margin-left: 0;
-        padding: 0;
-        @include phone{
-            display: none;
-        }
-        @include mini-tablet{
-            display: none;
-        }  
-        @include tablet{
-            display: none;
-        }
-        @include desktop{
-            display: inline;
-        }
-    }
-
-
-
-
-// Inspocontainer & Div
-
-.section-content {
-    background-color: $footerBG;
-    
-    .content-box {
-        height: 100%;
-
-        .icon {
-            margin-top: 20px;
-            font-size: 40pt;
-            margin-left: 18pt;
-       
-        }
-
-    }
+     
    
 }
 
@@ -264,9 +162,9 @@ font-family: 'Quicksand', sans-serif;
 .bloomitInfo{
     padding-right: 10px;
 }
-}
 
-#products {
+
+// #products {
 
       
-}
+// }

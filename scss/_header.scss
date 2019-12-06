@@ -1,0 +1,129 @@
+$headerTextColor: rgb(56, 55, 55);
+
+@mixin phone {
+    @media (max-width: 600px) { @content; }    
+}
+@mixin mini-tablet {
+    @media (min-width: 600px) { @content; }    
+}
+@mixin tablet {
+    @media (min-width: 820px) { @content; }    
+}
+@mixin desktop {
+    @media (min-width: 1200px) { @content; }    
+}
+
+#caruselContainer {
+    position: absolute;
+        right: 2%;
+        z-index: 10;
+        top: 12%;
+        color:$headerTextColor;
+        text-align: center;
+        width: 54%;
+    
+        @include mini-tablet{
+            top: 14%;
+            right: 1%;
+            width: 56%;
+        }
+        @include tablet{
+            top: 7%;
+            right: 2%;
+            width: 55%;
+        }
+
+        @include tablet{
+            top: 20%;
+            right: 1%;
+            width: 55%;
+        }
+
+        @include desktop {
+            top: 32%;
+        }
+    .carusel_h1{
+        font-size: 20pt;
+
+        @include mini-tablet{
+            font-size: 40px;
+            
+        }
+        @include tablet{
+            font-size: 40px;
+            
+        }
+        @include desktop{
+            font-size: 50px;
+        }
+    } 
+
+    .carusel_p{
+        font-size: 12pt;
+
+        @include mini-tablet{
+            font-size: 16pt;
+        }
+        @include tablet{
+            font-size: 22px;
+            width: 60%;
+            position: absolute;
+            right: 20%;
+        }
+        @include desktop{
+            font-size: 28px;
+            width: 70%;
+            right: 15%;
+        }
+    }
+
+    .headerBtn{
+        font-size: 12pt;
+        padding: 2px;
+        width: 80px;
+        color: $headerTextColor;
+        border: 2px solid;
+
+        @include mini-tablet{
+            font-size: 14pt;
+            width: 100px;
+        }
+
+        @include tablet {
+            position: absolute;
+            top: 300%;
+        }
+    }
+}
+
+
+// Header statisk bild mobil och tablet 
+.static-header {
+    img {
+        width: 100%;
+    }
+    @include desktop{
+        display: none;
+    }
+}
+
+
+//Bild carusell
+.carousel_bloomit {
+    position: relative;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+    @include phone{
+        display: none;
+    }
+    @include mini-tablet{
+        display: none;
+    }  
+    @include tablet{
+        display: none;
+    }
+    @include desktop{
+        display: inline;
+    }
+}

@@ -4,18 +4,8 @@ $(document).ready(function(){
     $(h1HeaderDiv).addClass("carusel_h1");
 
     // Skapa p-tagg och lägger till den i #carusellDiv
-    let pHeaderDiv = $("<p>").html("Beautiful and fresh flowers made daily <br> and delivered across Sweden.").appendTo("#carusellDiv");
+    let pHeaderDiv = $("<p>").html("Beautiful and fresh flowers made daily and delivered across Sweden.").appendTo("#carusellDiv");
     $(pHeaderDiv).addClass("carusel_p");    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     let flowers = [

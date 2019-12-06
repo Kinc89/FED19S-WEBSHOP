@@ -1,0 +1,41 @@
+$footerBG: #d3d3d3;
+@mixin phone {
+    @media (max-width: 600px) { @content; }    
+}
+@mixin mini-tablet {
+    @media (min-width: 600px) { @content; }    
+}
+@mixin tablet {
+    @media (min-width: 820px) { @content; }    
+}
+@mixin desktop {
+    @media (min-width: 1200px) { @content; }    
+}
+
+
+ // Section delivery info
+  .section-content {
+    background-color: $footerBG;
+    
+    .content-box {
+        height: 100%;
+       
+
+        .icon {
+            font-size: 30pt;
+    
+            @include mini-tablet{
+                
+            }
+        }
+       
+        h6 {
+            font-size: 12pt;
+            
+        }
+        p {
+            font-size: 10pt;
+        }
+       
+    }
+}
