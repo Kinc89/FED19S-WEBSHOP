@@ -26,7 +26,7 @@ $footerBG2: rgb(39, 38, 38);
             left: 2%;
         }
         .nav-item {
-            padding-right: 15px;
+            //padding-right: 15px;
     
             .nav-link {
                 text-align: end;
@@ -40,9 +40,9 @@ $footerBG2: rgb(39, 38, 38);
 .footerinfo {
     background-color: $footerBG;
 
-    .bloomitInfo{
-        padding-right: 10px;
-    }
+    //.bloomitInfo{
+        // padding-right: 10px;
+    //}
 
     .footerlogodiv {
         text-align: center;
@@ -60,7 +60,7 @@ footer {
         background-color: $footerBG2;
 
         .terms {
-            margin-right: 5px;
+            //margin-right: 5px;
             padding: 5px; 
         }
 
@@ -68,9 +68,9 @@ footer {
             display: flex;
             justify-content: end;
         
-            .SoMe {
-                margin-right: 10px;
-            }
+            //.SoMe {
+                //margin-right: 10px;
+            //}
         }
 
         #footer_container {

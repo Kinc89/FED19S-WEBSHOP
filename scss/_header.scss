@@ -83,6 +83,7 @@ $headerTextColor: rgb(56, 55, 55);
         width: 80px;
         color: $headerTextColor;
         border: 2px solid;
+        z-index: 15;
 
         @include mini-tablet{
             font-size: 14pt;
@@ -92,6 +93,11 @@ $headerTextColor: rgb(56, 55, 55);
         @include tablet {
             position: absolute;
             top: 300%;
+        }
+
+        @include desktop{
+            position: absolute;
+            top:100%;
         }
     }
 }
