@@ -45,13 +45,18 @@ $(document).ready(function(){
     for (const flower of flowers){
         // container.append("<div class='product'><h2>"+ flower.title + "</h2> <img src='"+ flower.img +"'/></div>")
         let div = $('<div>').addClass("imgWrapper col-6 col-lg-3 " + flower.category);
-        let title = $("<p>Text</p>).appendTo('#products').addClass("col-12").attr(flower.price);
-        let img = $("<img>").addClass("inspoimg").attr("src", flower.img).attr("alt", "inspobild");
-        
-
-        $('<p>Text</p>').appendTo('#Content');
-        div.append(title);
+        let title = $('<div>').addClass("myTitle").html(flower.title);
+        let price = $('<div>').addClass("myPrice").text(flower.price);
+        let img = $('<img>').addClass("inspoimg").attr("src", flower.img).attr("alt", "inspobild");
+        let myBtn = $('<button>').addClass("btn btn-outline-secondary btnInfo").text("Purchase").attr("alt", "Purchase")
+        // $('#test').append('<span>' test[counter] '</span>');
+        // $('<p>Text</p>').appendTo('#Content');
+        // div.append(title);
+       
         div.append(img);
+        div.append(title);
+        div.append(price);
+        div.append(myBtn);
         container.append(div);
         // Såhär kan man göra i modern javascript, funkar ej i IE
         // `<div class="imgWrapper col-6 col-lg-3 ${flower.category}">
