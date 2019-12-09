@@ -1,12 +1,11 @@
 $(document).ready(function(){
-    // Skapar en h1 till diven som ligger ovanpå carusell och statisk header
+    // På förstasidan: Skapar en h1 till diven som ligger ovanpå carusell och statisk header
     let h1HeaderDiv = $("<h1>").html("Say it with flowers").appendTo($("#carusellDiv"));
     $(h1HeaderDiv).addClass("carusel_h1");
 
-    // Skapa p-tagg och lägger till den i #carusellDiv
+    // På förstasidan: Skapa p-tagg och lägger till den i #carusellDiv
     let pHeaderDiv = $("<p>").html("Beautiful and fresh flowers made daily and delivered across Sweden.").appendTo("#carusellDiv");
     $(pHeaderDiv).addClass("carusel_p");    
-    
     
     let flowers = [
         {id: '1', title: 'Sweet heart', price: '599 kr', articlenr: 0001, description: 'All of our flower products are individually crafted from the best blossoms daily. If any flower shown is unavailable for any reason, we may make a substitution of equal or greater value in similar color to ensure timely delivery.', img: "../img/products_img/Födelsedagsblommor/birthdayflowers1.jpg", category: "Birthdayflowers" },
