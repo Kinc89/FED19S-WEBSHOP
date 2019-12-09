@@ -122,6 +122,9 @@ footer {
   .static-header {
     display: none; } }
 
+.static-header2 img {
+  width: 100%; }
+
 .carousel_bloomit {
   position: relative;
   margin-right: 0;
