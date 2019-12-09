@@ -1,0 +1,26 @@
+#category_container {
+  position: absolute;
+  right: 2%;
+  z-index: 10;
+  top: 12%;
+  color: #383737;
+  text-align: center;
+  width: 54%; }
+  @media (min-width: 600px) {
+    #category_container {
+      top: 14%;
+      right: 1%;
+      width: 56%; } }
+  @media (min-width: 820px) {
+    #category_container {
+      top: 7%;
+      right: 2%;
+      width: 55%; } }
+  @media (min-width: 820px) {
+    #category_container {
+      top: 20%;
+      right: 1%;
+      width: 55%; } }
+  @media (min-width: 1200px) {
+    #category_container {
+      top: 32%; } }
