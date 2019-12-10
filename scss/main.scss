@@ -5,6 +5,7 @@
 @import "colors.scss";
 @import "mixin.scss";
 @import "all_products.scss";
+@import "one_product_page.scss";
 
 @mixin phone {
     @media (max-width: 600px) { @content; }    
