@@ -182,21 +182,22 @@ body .imgcontainer {
 #CategoryDiv {
   text-align: center;
   position: absolute;
-  top: 70px;
-  right: 23px;
+  top: 25px;
+  right: 30px;
   width: 45%; }
   @media (min-width: 600px) {
     #CategoryDiv {
-      top: 100px; } }
+      top: 43px; } }
   @media (min-width: 820px) {
     #CategoryDiv {
-      top: 130px; } }
+      top: 60px; } }
   @media (min-width: 1000px) {
     #CategoryDiv {
-      top: 160px; } }
+      top: 80px; } }
   @media (min-width: 1200px) {
     #CategoryDiv {
-      top: 200px; } }
+      top: 115px;
+      right: 32px; } }
 
 .productWrapper {
   padding: 0;
