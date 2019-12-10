@@ -1,7 +1,5 @@
-// Navbar
-$navbarBG: white;
-$footerBG: #d3d3d3;;
-$footerBG2: rgb(39, 38, 38);
+@import "colors.scss";
+@import "mixin.scss";
 
 .main-nav {
     position: relative;
@@ -49,6 +47,11 @@ $footerBG2: rgb(39, 38, 38);
         margin-bottom: 15px;
         .footerlogo{
             width: 50%;
+
+            @include desktop {
+                width: 90%;
+                margin-top: 10px;
+            }
         }
     }
 }

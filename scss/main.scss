@@ -2,6 +2,8 @@
 @import "header.scss";
 @import "deliveryinfo.scss";
 @import "inspoimg.scss";
+@import "colors.scss";
+@import "mixin.scss";
 @import "all_products.scss";
 
 @mixin phone {
@@ -34,6 +36,16 @@ body {
     margin:0;
     padding: 0;
 
+    .container-fluid {
+        padding:0;
+
+        .row {
+            margin-left:0;
+            margin-right: 0;
+        }
+    }
+
+
     a {
         color: $linkcolor;
 
@@ -53,7 +65,7 @@ body {
     }
    
 }
-
+ 
 
 
 .testbox1 {
