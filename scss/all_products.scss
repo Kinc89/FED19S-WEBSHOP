@@ -1,4 +1,4 @@
-$headerTextColor: rgb(56, 55, 55);
+@import "colors.scss";
 
 @mixin phone {
     @media (max-width: 600px) { @content; }    
