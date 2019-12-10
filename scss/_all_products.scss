@@ -24,3 +24,12 @@ $headerTextColor: rgb(56, 55, 55);
     width: 42%;
     position: absolute;
 }
+.productWrapper {
+    padding: 0;
+    padding: 5px;
+    text-align: center;
+
+    .productImg {
+        width: 100%;
+    }
+}
