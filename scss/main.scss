@@ -6,7 +6,6 @@
 @import "mixin.scss";
 //@import "all_products.scss";
 
-// fråga sebastian om hur man har mixin i egen scss
 @mixin phone {
     @media (max-width: 600px) { @content; }    
 }
@@ -66,7 +65,7 @@ body {
     }
    
 }
-
+ 
 
 
 .testbox1 {
