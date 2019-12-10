@@ -4,6 +4,7 @@
 @import "inspoimg.scss";
 @import "colors.scss";
 @import "mixin.scss";
+@import "all_products.scss";
 
 // fråga sebastian om hur man har mixin i egen scss
 @mixin phone {
@@ -18,6 +19,18 @@
 @mixin desktop {
     @media (min-width: 1200px) { @content; }    
 }
+
+$navbarBG: white;
+$inspoimg: pink; 
+$footerBG: #d3d3d3;;
+$linkcolor: rgba(119, 118, 118, 0.87);
+$linkhover: rgb(39, 38, 38);
+$headerTextColor: rgb(56, 55, 55);
+$red: red;
+$green: green;
+$blue: blue;
+$footerBG2: rgb(39, 38, 38);
+ 
 
 body {
     font-family: 'Quicksand', sans-serif; 
