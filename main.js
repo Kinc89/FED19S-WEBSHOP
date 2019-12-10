@@ -61,29 +61,39 @@ $(document).ready(function(){
         // `<div class="imgWrapper col-6 col-lg-3 ${flower.category}">
         //     <img class="inspoimg" src="${flower.img}" alt="inspobild" />
         // </div>`
-
-        
-
-        
     }
 
     $("#BtnSort1").click(function(event){
+        // För att sortera fram rätt kategori
         $(".imgWrapper").not(".Birthdayflowers").hide()
         $(".Birthdayflowers").show()
+        // Kategorinamnen
+        $(".categoryName").html("Birthday flowers")
+
     });
     $("#BtnSort2").click(function(event){
+        // För att sortera fram rätt kategori
         $(".imgWrapper").not(".Loveflowers").hide()
         $(".Loveflowers").show()
+        // Kategorinamnen
+        $(".categoryName").html("Love flowers")
     });
     $("#BtnSort3").click(function(event){
+        // För att sortera fram rätt kategori
         $(".imgWrapper").not(".Holidayflowers").hide()
         $(".Holidayflowers").show()
+        // Kategorinamnen
+        $(".categoryName").html("Holiday flowers")
     });
     $("#BtnSort4").click(function(event){
+        // För att sortera fram rätt kategori
         $(".imgWrapper").not(".Seasonflowers").hide()
         $(".Seasonflowers").show()
+        // Kategorinamnen
+        $(".categoryName").html("Season flowers")
     });
     $("#BtnSort5").click(function(event){
+        // För att sortera fram alla kategorier
         $(".imgWrapper").show()
     });
     

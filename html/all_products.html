@@ -23,9 +23,11 @@
 </head>
 
 <body>
+
+<div class="container-fluid">
     <!--NAV-BAR-->
-    <div class="container-fluid main-nav">
-        <nav class="navbar-right navbar-expand navbar-light" role="navigation">
+    <div class="row main-nav">
+        <nav class="col-12 navbar-right navbar-expand navbar-light" role="navigation">
             <ul class="navbar-nav">
                 <li class="nav-img">
                     <img src="../img/logga_img/BLOOMIT_logo.png" class="nav-img">
@@ -51,22 +53,16 @@
 
     <!--HEADER TEXT-->
     <div class="row" id="category_container">
-        <div class="col-12" id="CategoryDiv">
-            <h1 class="categoryName">All Flower</h1>
-            <h1 class="categoryName">Birthday Flower</h1>
-            <h1 class="categoryName">Love Flower</h1>
-            <h1 class="categoryName">Holiday Flower</h1>
-            <h1 class="categoryName">Season Flower</h1>
+            
         </div>
-        <div class="col-12 justify-content-center">
-            <button type="button" class="btn btn-outline-secondary headerBtn">To shop</button>
-        </div>
-    </div>
 
     <!--STATIC HEADER-->
-    <div class="row">
+    <div class="row static-header3">
         <div class="col-12 static-header2">
             <img src="../img/carusell_img/carusell2.jpg" alt="Header picture 1">
+            <div class="col-12" id="CategoryDiv">
+                    <h1 class="categoryName"></h1>
+                </div>
         </div>
     </div>
     <!--STATIC HEADER END-->
@@ -86,37 +82,35 @@
     </div>
 
     <!--FOOTER-->
-    <footer class="footer-fluid">
-        <div class="container footerinfo">
-            <div class="row">
-                <div class="col-6 col-md-4 col-lg-4">
+
+    <!-- Footern är nu relative (absolute gjorde så att resten av sidan trillar bakom. Det kan köras om vi har en fast offset-margin som puttar allt upp från den)
+    Footern behöver dock göras större, och fästas längst ner. -->
+   
+    <footer>
+            <div class="row justify-content-center footerinfo">
+                <div class="col-12 col-md-4 col-lg-3 mt-3">
                     <div class="bloomitInfo">
                         <p><b>Bloomit</b><br>
-                            We who run Bloomit have a great deal of experience from a flower shop, which means that we
-                            have developed and customized our webshop and customer service so that it is complete for
-                            both consumer and shop. We know a great deal about flowers and service and this makes us
-                            unique from our competitors.
+                            We who run Bloomit have a great deal of experience from a flower shop, which means that we have developed and customized our webshop and customer service so that it is complete for both consumer and shop. We know a great deal about flowers and service and this makes us unique from our competitors.
                         </p>
                     </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-4">
+                <div class="col-12 col-md-4 col-lg-5 mt-3 footerbox2">
                     <b>Contact</b>
                     <div>
-                        <p>Bloomit AB<br>
-                            Agatvägen 18<br>
-                            16860 BROMMA</p>
+                    <p>Bloomit AB<br>
+                    Agatvägen 18<br>
+                    16860 BROMMA</p>
                     </div>
                 </div>
-
-
-
-                <div class="col-12 col-md-4 col-lg-4">
+                <div class="col-12 col-md-4 col-lg-3 footerlogodiv">
                     <img class="footerlogo" src="../img/logga_img/BLOOMIT_flower_logo.png">
                 </div>
             </div>
-        </div>
-        <div class="container footerlinks">
-            <div class="row p-3" id="footer_container">
+         
+    
+        
+            <div class="row p-3 footerlinks">
                 <div class="col-9">
                     <a href="#" class="terms"><u>Användarvillkor</u></a>
                     <a href="#" class="terms"><u>Sekretessvillkor</u></a>
@@ -133,11 +127,12 @@
                     </a>
                 </div>
             </div>
-        </div>
-    </footer>
-
-    <!--FOOTER END -->
+        
+    
+        
+        <!--FOOTER END -->
     <script src="https://kit.fontawesome.com/9d5595f4e5.js" crossorigin="anonymous"></script>
+</div>
 </body>
 
 </html>
