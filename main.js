@@ -70,6 +70,11 @@ $(document).ready(function(){
         // Kategorinamnen
         $(".categoryName").html("Birthday flowers")
         $(".categoryDescription").html("Experience our beautiful birthday flowers")
+        // För att få samma kategori ovanför sorteringsknapparna
+        $(".categoryName2").html("Birthday flowers")
+        $(".categoryDescription2").html("Gifts are kindly requested, but birthday flowers are always welcome! It never goes wrong when you choose to send a crackling bouquet to the one who is now celebrating years. Even better, you can expect this to be the perfect gift. You become today's hero no matter what others choose to give to the birthday child!")
+
+
 
     });
     $("#BtnSort2").click(function(event){
@@ -79,6 +84,9 @@ $(document).ready(function(){
         // Kategorinamnen
         $(".categoryName").html("Love flowers")
         $(".categoryDescription").html("Experience our beautiful love flowers")
+        // För att få samma kategori ovanför sorteringsknapparna
+        $(".categoryName2").html("Love flowers")
+        $(".categoryDescription2").html("How do you show that you love and feel great love? With flowers of course! When you send love flowers everything is forgiven. Just that you came to the idea of waking up with nature's most beautiful is impressive. This is proof that you care and that you understand how important it is to show it in practice.")
     });
     $("#BtnSort3").click(function(event){
         // För att sortera fram rätt kategori
@@ -87,6 +95,9 @@ $(document).ready(function(){
         // Kategorinamnen
         $(".categoryName").html("Holiday flowers")
         $(".categoryDescription").html("Experience our beautiful holiday flowers")
+        // För att få samma kategori ovanför sorteringsknapparna
+        $(".categoryName2").html("Holiday flowers")
+        $(".categoryDescription2").html("A bouquet of flowers is a bunch of energy. It can make anyone start thinking new thoughts. With bouquets we show love, friendship, respect and consideration. We have so many different types of bouquets that you can always find the right arrangement. With flowers it is not difficult to choose. You can go on occasion or choose the colors that you know are favorites.")
     });
     $("#BtnSort4").click(function(event){
         // För att sortera fram rätt kategori
@@ -95,6 +106,9 @@ $(document).ready(function(){
         // Kategorinamnen
         $(".categoryName").html("Season flowers")
         $(".categoryDescription").html("Experience our beautiful season flowers")
+        // För att få samma kategori ovanför sorteringsknapparna
+        $(".categoryName2").html("Season flowers")
+        $(".categoryDescription2").html("A simple rose says everything that the heart holds. Most people have some form of relationship with the flower that can be said to be the symbol of love. But it doesn't have to be about passion and romantic love. The roses are available in many different colors and variations. A big bouquet of roses for mom or best friend is a warm gesture that is appreciated.")
     });
     $("#BtnSort5").click(function(event){
         // För att sortera fram alla kategorier
@@ -102,7 +116,10 @@ $(document).ready(function(){
         // Kategorinamnen
         $(".categoryName").html("All flowers")
         $(".categoryDescription").html("Experience our beautiful flowers")
+        // För att få samma kategori ovanför sorteringsknapparna
+        $(".categoryName2").html("All flowers")
         $(".productWrapper").show()
+        $(".categoryDescription2").html("A flower delivery can help you to express your feelings and thoughts. Send A simple gift to someone you love. Let our flowers be the mediating link between you and the person you have in your thoughts and your heart. By sending flowers with us, what you think and feel will go straight to the recipient's heart.")
     });
     
 });
