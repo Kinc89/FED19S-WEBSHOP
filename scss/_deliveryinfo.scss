@@ -1,4 +1,6 @@
-$footerBG: #d3d3d3;
+@import "colors.scss";
+
+
 @mixin phone {
     @media (max-width: 600px) { @content; }    
 }
@@ -17,25 +19,23 @@ $footerBG: #d3d3d3;
   .section-content {
     background-color: $footerBG;
     
-    .content-box {
-       
-       
 
-        .icon {
-            font-size: 30pt;
+    .contentbox {
+        margin-top:10px;
+    }
+    .icon {
+        font-size: 30pt;
+        margin-top: 5px;
+        @include mini-tablet{
+
+        }
+    }
     
-            @include mini-tablet{
-                
-            }
-        }
-       
-        h6 {
-            font-size: 12pt;
-            
-        }
-        p {
-            font-size: 10pt;
-        }
-       
+    h6 {
+        font-size: 12pt;
+        
+    }
+    p {
+        font-size: 10pt;
     }
 }

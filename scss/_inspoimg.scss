@@ -1,4 +1,6 @@
 // Inspiration img 
+@import "colors.scss";
+
 @mixin phone {
     @media (max-width: 600px) { @content; }    
 }
