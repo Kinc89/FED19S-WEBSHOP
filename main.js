@@ -43,10 +43,10 @@ $(document).ready(function(){
 
     for (const flower of flowers){
         // container.append("<div class='product'><h2>"+ flower.title + "</h2> <img src='"+ flower.img +"'/></div>")
-        let div = $('<div>').addClass("imgWrapper col-6 col-lg-3 " + flower.category);
-        let title = $('<div>').addClass("myTitle").html(flower.title);
+        let div = $('<div>').addClass("productWrapper col-6 col-lg-3" + ' ' + flower.category);
+        let title = $('<div>').addClass("myTitle ").html(flower.title);
         let price = $('<div>').addClass("myPrice").text(flower.price);
-        let img = $('<img>').addClass("inspoimg").attr("src", flower.img).attr("alt", "inspobild");
+        let img = $('<img>').addClass("productImg ").attr("src", flower.img).attr("alt", "inspobild");
         let myBtn = $('<button>').addClass("btn btn-outline-secondary btnInfo").text("Purchase").attr("alt", "Purchase")
         // $('#test').append('<span>' test[counter] '</span>');
         // $('<p>Text</p>').appendTo('#Content');

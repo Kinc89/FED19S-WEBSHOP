@@ -43,3 +43,13 @@ $headerTextColor: rgb(56, 55, 55);
         top: 32%; 
     }
 } 
+
+.productWrapper {
+    padding: 0;
+    padding: 5px;
+    text-align: center;
+
+    .productImg {
+        width: 100%;
+    }
+}

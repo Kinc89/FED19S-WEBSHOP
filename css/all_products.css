@@ -24,3 +24,10 @@
   @media (min-width: 1200px) {
     #category_container {
       top: 32%; } }
+
+.productWrapper {
+  padding: 0;
+  padding: 5px;
+  text-align: center; }
+  .productWrapper .productImg {
+    width: 100%; }
