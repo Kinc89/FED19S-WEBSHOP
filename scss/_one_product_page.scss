@@ -1,12 +1,16 @@
 @import "mixin.scss";
 
+.oneProductWrapper{
+    margin-bottom: 100px;
+    margin-top: 40px;
+}
+
 .oneProductImg{
     border: black solid 1px;
     padding: 20px;
     @include desktop {
         margin-left: 60px;
     }
-    
 }
 
 .oneProductDescription{
