@@ -69,6 +69,7 @@ $(document).ready(function(){
         $(".Birthdayflowers").show()
         // Kategorinamnen
         $(".categoryName").html("Birthday flowers")
+        $(".categoryDescription").html("Experience our beautiful ")
 
     });
     $("#BtnSort2").click(function(event){
@@ -95,6 +96,8 @@ $(document).ready(function(){
     $("#BtnSort5").click(function(event){
         // För att sortera fram alla kategorier
         $(".imgWrapper").show()
+        // Kategorinamnen
+        $(".categoryName").html("All flowers")
     });
     
 });
