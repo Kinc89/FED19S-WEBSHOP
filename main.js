@@ -69,7 +69,7 @@ $(document).ready(function(){
         $(".Birthdayflowers").show()
         // Kategorinamnen
         $(".categoryName").html("Birthday flowers")
-        $(".categoryDescription").html("Experience our beautiful ")
+        $(".categoryDescription").html("Experience our beautiful birthday flowers")
 
     });
     $("#BtnSort2").click(function(event){
@@ -78,6 +78,7 @@ $(document).ready(function(){
         $(".Loveflowers").show()
         // Kategorinamnen
         $(".categoryName").html("Love flowers")
+        $(".categoryDescription").html("Experience our beautiful love flowers")
     });
     $("#BtnSort3").click(function(event){
         // För att sortera fram rätt kategori
@@ -85,6 +86,7 @@ $(document).ready(function(){
         $(".Holidayflowers").show()
         // Kategorinamnen
         $(".categoryName").html("Holiday flowers")
+        $(".categoryDescription").html("Experience our beautiful holiday flowers")
     });
     $("#BtnSort4").click(function(event){
         // För att sortera fram rätt kategori
@@ -92,12 +94,14 @@ $(document).ready(function(){
         $(".Seasonflowers").show()
         // Kategorinamnen
         $(".categoryName").html("Season flowers")
+        $(".categoryDescription").html("Experience our beautiful season flowers")
     });
     $("#BtnSort5").click(function(event){
         // För att sortera fram alla kategorier
         $(".imgWrapper").show()
         // Kategorinamnen
         $(".categoryName").html("All flowers")
+        $(".categoryDescription").html("Experience our beautiful flowers")
     });
     
 });
