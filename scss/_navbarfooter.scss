@@ -7,10 +7,12 @@
     width: 100%;
     font-size: 15px;
     margin-top:10px;
+    background-color: $background;
 
     .navbar-right {
         width: 100%;
         background: $navbarBG;
+        background-color: $background;
 
         .navbar-nav {
             justify-content: flex-end;

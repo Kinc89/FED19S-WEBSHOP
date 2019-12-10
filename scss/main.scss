@@ -7,35 +7,14 @@
 @import "all_products.scss";
 @import "one_product_page.scss";
 
-@mixin phone {
-    @media (max-width: 600px) { @content; }    
-}
-@mixin mini-tablet {
-    @media (min-width: 600px) { @content; }    
-}
-@mixin tablet {
-    @media (min-width: 820px) { @content; }    
-}
-@mixin desktop {
-    @media (min-width: 1200px) { @content; }    
-}
 
-$navbarBG: white;
-$inspoimg: pink; 
-$footerBG: #d3d3d3;;
-$linkcolor: rgba(119, 118, 118, 0.87);
-$linkhover: rgb(39, 38, 38);
-$headerTextColor: rgb(56, 55, 55);
-$red: red;
-$green: green;
-$blue: blue;
-$footerBG2: rgb(39, 38, 38);
  
 
 body {
     font-family: 'Quicksand', sans-serif; 
     margin:0;
     padding: 0;
+    background: $background;
 
     .container-fluid {
         padding:0;
