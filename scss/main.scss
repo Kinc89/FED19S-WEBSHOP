@@ -2,6 +2,7 @@
 @import "header.scss";
 @import "deliveryinfo.scss";
 @import "inspoimg.scss";
+@import "all_products.scss";
 
 // fråga sebastian om hur man har mixin i egen scss
 @mixin phone {
@@ -18,7 +19,7 @@
 }
 
 $navbarBG: white;
-$inspoimg: pink;
+$inspoimg: pink; 
 $footerBG: #d3d3d3;;
 $linkcolor: rgba(119, 118, 118, 0.87);
 $linkhover: rgb(39, 38, 38);
@@ -27,7 +28,7 @@ $red: red;
 $green: green;
 $blue: blue;
 $footerBG2: rgb(39, 38, 38);
-
+ 
 
 body {
     font-family: 'Quicksand', sans-serif; 

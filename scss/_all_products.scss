@@ -1,0 +1,26 @@
+$headerTextColor: rgb(56, 55, 55);
+
+@mixin phone {
+    @media (max-width: 600px) { @content; }    
+}
+@mixin mini-tablet {
+    @media (min-width: 600px) { @content; }    
+}
+@mixin tablet {
+    @media (min-width: 820px) { @content; }    
+}
+@mixin desktop {
+    @media (min-width: 1200px) { @content; }    
+}
+
+.categoryName{
+    font-size: 30px;
+    z-index: 2;
+}
+
+#CategoryDiv{
+    top: 100px;
+    right: 20px;
+    width: 42%;
+    position: absolute;
+}

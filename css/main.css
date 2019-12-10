@@ -164,6 +164,16 @@ body .imgcontainer {
     width: 170px;
     font-size: 16pt; }
 
+.categoryName {
+  font-size: 30px;
+  z-index: 2; }
+
+#CategoryDiv {
+  top: 100px;
+  right: 20px;
+  width: 42%;
+  position: absolute; }
+
 body {
   font-family: 'Quicksand', sans-serif;
   margin: 0;
