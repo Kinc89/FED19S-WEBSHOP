@@ -208,6 +208,20 @@ body .imgcontainer {
   .productWrapper .productImg {
     width: 100%; }
 
+.oneProductImg {
+  border: black solid 1px;
+  padding: 20px; }
+  @media (min-width: 1200px) {
+    .oneProductImg {
+      margin-left: 60px; } }
+
+.oneProductDescription {
+  border: black solid 1px;
+  padding: 20px; }
+  @media (min-width: 1200px) {
+    .oneProductDescription {
+      margin-right: 60px; } }
+
 body {
   font-family: 'Quicksand', sans-serif;
   margin: 0;
