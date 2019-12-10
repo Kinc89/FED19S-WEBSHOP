@@ -1,17 +1,5 @@
-$headerTextColor: rgb(56, 55, 55);
-
-@mixin phone {
-    @media (max-width: 600px) { @content; }    
-}
-@mixin mini-tablet {
-    @media (min-width: 600px) { @content; }    
-}
-@mixin tablet {
-    @media (min-width: 820px) { @content; }    
-}
-@mixin desktop {
-    @media (min-width: 1200px) { @content; }    
-}
+@import "mixin.scss";
+@import "colors.scss";
 
 #caruselContainer {
     position: absolute;
