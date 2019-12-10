@@ -36,21 +36,22 @@ $headerTextColor: rgb(56, 55, 55);
 #CategoryDiv{
     text-align: center;
     position: absolute;
-    top: 70px;
-    right: 23px;
+    top: 25px;
+    right: 30px;
     width: 45%;
 
     @include mini-tablet{
-        top: 100px;
+        top: 43px;
     }
     @include tablet{
-        top: 130px;
+        top: 60px;
     }
     @include mini-desktop{
-        top: 160px;    
+        top: 80px;    
     }
     @include desktop{
-        top: 200px;
+        top: 115px;
+        right: 32px;
     }
 }
 .productWrapper {
