@@ -33,9 +33,9 @@
           margin-top: 10px; } }
 
 footer {
-  background-color: #646464; }
+  background-color: #384a64; }
   footer .footerlinks {
-    background-color: #646464; }
+    background-color: #384a64; }
     footer .footerlinks .terms {
       padding: 5px; }
     footer .footerlinks .soMe_container {
@@ -43,7 +43,7 @@ footer {
       justify-content: end; }
     footer .footerlinks #footer_container {
       position: relative;
-      background-color: #646464; }
+      background-color: #384a64; }
 
 #caruselContainer {
   position: absolute;
