@@ -1,0 +1,1 @@
+let backToCartBtn = $("<button>").addClass().html("Back to cart").appendTo($("paymentContainer"));

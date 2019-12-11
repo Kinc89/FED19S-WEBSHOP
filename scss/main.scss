@@ -6,6 +6,7 @@
 @import "mixin.scss";
 @import "all_products.scss";
 @import "one_product_page.scss";
+@import "payment_page.scss";
 
 
  
@@ -16,7 +17,7 @@ body {
     padding: 0;
     background: $background;
 
-    .container-fluid {
+    .container-fluid { 
         padding:0;
 
         .row {
