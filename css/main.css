@@ -33,9 +33,9 @@
           margin-top: 10px; } }
 
 footer {
-  background-color: #cecdcd; }
+  background-color: #384a64; }
   footer .footerlinks {
-    background-color: #cecdcd; }
+    background-color: #384a64; }
     footer .footerlinks .terms {
       padding: 5px; }
     footer .footerlinks .soMe_container {
@@ -43,7 +43,7 @@ footer {
       justify-content: end; }
     footer .footerlinks #footer_container {
       position: relative;
-      background-color: #cecdcd; }
+      background-color: #384a64; }
 
 #caruselContainer {
   position: absolute;
@@ -248,6 +248,11 @@ body .imgcontainer {
   .cartWrapper .cartTotals {
     height: 400px;
     border-left: 1px solid darkgrey; }
+
+.footerlogo-payment-page {
+  justify-content: center;
+  max-width: 100%;
+  max-height: 200px; }
 
 body {
   font-family: 'Quicksand', sans-serif;
