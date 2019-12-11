@@ -21,7 +21,7 @@ $(document).ready(function(){
         .text("Purchase")
         .attr("alt", "Purchase")
         .on("click", function(){
-            window.open("../html/one_product_page.html?id=" + flower.id)
+            window.open("../html/one_product_page.html?id=" + flower.id, "_self")
         });
         // $('#test').append('<span>' test[counter] '</span>');
         // $('<p>Text</p>').appendTo('#Content');
