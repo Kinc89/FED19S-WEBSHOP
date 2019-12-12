@@ -1,0 +1,44 @@
+@import "mixin.scss";
+@import "colors.scss";
+
+
+.cartheader {
+    text-align: center;
+}
+.cartwrapperText {
+    border-bottom: 2px solid darkgrey;
+    
+}
+
+.cartWrapper {
+    margin-top:30px;
+
+    .cartProduct {
+        height: 220px; 
+       
+
+        .cartProductImg {
+            background-color: lightblue;
+            height: 210px;
+            
+        }
+    
+        .cartProductInfo {
+            background-color: lightgray;
+            height: 210px;
+        }
+
+          
+        .cartProductDeleteBtn {
+            background-color: lightseagreen;
+            height: 210px;
+        }
+    }
+
+    .cartTotals {
+        height: 400px; 
+        border-left: 1px solid darkgrey;
+        
+    }
+
+}
