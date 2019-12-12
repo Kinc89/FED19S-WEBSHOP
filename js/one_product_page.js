@@ -33,12 +33,7 @@ $(document).ready(function(){
 
 
 
-    // let identifiedFlower = flower.id + flowers.img;
-    // identifiedFlower.pushStack($(".oneProductImg"));
-    //$.urlParam("id");
-    
-    // const searchParams = new URLSearchParams(window.location.search)
-    // console.log(searchParams);
+  
 
 
 });
