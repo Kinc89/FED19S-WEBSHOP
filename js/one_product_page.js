@@ -26,7 +26,7 @@ $(document).ready(function(){
     $(".oneProductPicture").attr("src", identifiedFlower.img);
     $(".oneProductTitle").text(identifiedFlower.title);    
     $(".oneProductDescription").text(identifiedFlower.description);
-    $(".oneProductPrice").text(identifiedFlower.price);
+    $(".oneProductPrice").text("Price: " + identifiedFlower.price);
     
 
 

@@ -32,6 +32,8 @@ $(document).ready(function(){
             const currentCart = JSON.parse(localStorage.getItem("Cart"));
 
             //1 Sök om produkten finns i ls
+                        
+            
 
             // Om produkten finns -> count++
 
