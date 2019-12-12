@@ -21,7 +21,7 @@
       text-align: end; }
 
 .footerinfo {
-  background-color: #cecdcd; }
+  background-color: rgba(214, 211, 211, 0.856); }
   .footerinfo .footerlogodiv {
     text-align: center;
     margin-bottom: 15px; }
@@ -33,9 +33,9 @@
           margin-top: 10px; } }
 
 footer {
-  background-color: #384a64; }
+  background-color: rgba(148, 147, 147, 0.856); }
   footer .footerlinks {
-    background-color: #384a64; }
+    background-color: rgba(148, 147, 147, 0.856); }
     footer .footerlinks .terms {
       padding: 5px; }
     footer .footerlinks .soMe_container {
@@ -43,7 +43,7 @@ footer {
       justify-content: end; }
     footer .footerlinks #footer_container {
       position: relative;
-      background-color: #384a64; }
+      background-color: rgba(148, 147, 147, 0.856); }
 
 #caruselContainer {
   position: absolute;
@@ -139,7 +139,7 @@ footer {
     padding: 0; }
 
 .section-content {
-  background-color: #cecdcd; }
+  background-color: rgba(214, 211, 211, 0.856); }
   .section-content .contentbox {
     margin-top: 10px; }
   .section-content .icon {
@@ -239,20 +239,24 @@ body .imgcontainer {
 
 .cartWrapper {
   margin-top: 30px; }
-  .cartWrapper .cartProduct {
-    height: 220px; }
-    .cartWrapper .cartProduct .cartProductImg {
-      background-color: lightblue;
-      height: 210px; }
-    .cartWrapper .cartProduct .cartProductInfo {
-      background-color: lightgray;
-      height: 210px; }
-    .cartWrapper .cartProduct .cartProductDeleteBtn {
-      background-color: lightseagreen;
-      height: 210px; }
+  .cartWrapper .cartProduct .cartProductImg {
+    background-color: lightblue;
+    height: 210px; }
+  .cartWrapper .cartProduct .cartProductInfo {
+    background-color: lightgray;
+    height: 210px; }
+  .cartWrapper .cartProduct .cartProductDeleteBtn {
+    background-color: lightseagreen;
+    height: 210px; }
+    .cartWrapper .cartProduct .cartProductDeleteBtn .deleteBtn {
+      padding: 3px;
+      width: 100%;
+      font-size: 17pt; }
   .cartWrapper .cartTotals {
     height: 400px;
     border-left: 1px solid darkgrey; }
+    .cartWrapper .cartTotals .totalPriceDiv {
+      text-align: end; }
 
 .footerinfo {
   margin: 0px; }
@@ -299,7 +303,7 @@ body {
       margin-left: 0;
       margin-right: 0; }
   body a {
-    color: rgba(119, 118, 118, 0.87); }
+    color: rgba(66, 65, 65, 0.87); }
     body a :hover {
       color: #272626; }
   body .contentcontainer {
