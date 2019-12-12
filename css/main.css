@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 .main-nav {
   position: relative;
   margin: 0 auto;
@@ -208,28 +210,35 @@ body .imgcontainer {
   .productWrapper .productImg {
     width: 100%; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "'Open Sans', sans-serif"; }
+
 .oneProductWrapper {
   margin-bottom: 100px;
   margin-top: 40px; }
 
-.oneProductImg {
-  border: black solid 1px;
-  padding: 20px; }
-  @media (min-width: 1200px) {
-    .oneProductImg {
-      margin-left: 60px; } }
+.addToCartBtnDiv {
+  text-align: center; }
+
+@media (min-width: 1200px) {
+  .oneProductImg {
+    margin-left: 60px; } }
 
 .oneProductDescription {
-  border: black solid 1px;
+  text-align: center;
+  justify-content: center;
   padding: 20px; }
   @media (min-width: 1200px) {
     .oneProductDescription {
       margin-right: 60px; } }
 
+.oneProductHeader {
+  text-align: center;
+  font-family: "'Open Sans', sans-serif"; }
+
 .oneProductPrice {
-  color: red;
-  font-size: 2em;
-  font-weight: bold; }
+  text-align: center;
+  font-size: 18pt; }
 
 .cartheader {
   text-align: center; }
@@ -262,34 +271,35 @@ body .imgcontainer {
     max-height: 200px; }
 
 .orderForm .container {
+  background-color: whitesmoke;
   color: #4c4c4c;
   padding: 20px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
+  .orderForm .container .order-form-label {
+    margin: 8px 0 0 0;
+    font-size: 14px;
+    font-weight: bold; }
+  .orderForm .container .order-form-input {
+    width: 100%;
+    padding: 8px 8px;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-radius: 3px !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.2em;
+    background-color: transparent;
+    border-color: #cccccc; }
+  .orderForm .container .btn-submit:hover {
+    background-color: #090909 !important; }
 
-.order-form-label {
-  margin: 8px 0 0 0;
-  font-size: 14px;
-  font-weight: bold; }
-
-.order-form-input {
-  width: 100%;
-  padding: 8px 8px;
-  border-width: 1px !important;
-  border-style: solid !important;
-  border-radius: 3px !important;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 1.2em;
-  background-color: transparent;
-  border-color: #cccccc; }
-
-.btn-submit:hover {
-  background-color: #090909 !important; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "'Open Sans', sans-serif"; }
 
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
   background: rgba(241, 237, 237, 0.856); }

@@ -17,7 +17,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="../js/payment_page.js"></script>
+        
+        <!--jQuery UI länkar-->
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <!--Bootstrap 4 länkar till kalender-->
+        https://gijgo.com/datepicker/example/bootstrap-4
+       
+        <script type="text/javascript" src="../js/payment_page.js"></script>
+
     <link href="../css/main.css" rel="stylesheet" />
     <title>Bloomit</title>
 </head>
@@ -51,23 +61,7 @@
                             </div>
                         </div>
 
-                        <!-- <div class="row mt-3 mx-4">
-                            <div class="col-12">
-                                <label class="order-form-label">Type of thing you want to order</label>
-                            </div>
-                            <div class="col-12">
-                                <input class="order-form-input" placeholder=" ">
-                            </div>
-                        </div>
 
-                        <div class="row mt-3 mx-4">
-                            <div class="col-12">
-                                <label class="order-form-label">Another type of thing you want to order</label>
-                            </div>
-                            <div class="col-12">
-                                <input class="order-form-input" placeholder=" ">
-                            </div>
-                        </div> -->
 
                         <div class="row mt-3 mx-4">
                             <div class="col-12">
@@ -77,7 +71,16 @@
                                 <input class="order-form-input datepicker" placeholder="Selected date" type="text"
                                     id="date-picker-example">
                             </div>
+                            <div id="datepicker"></div>
                         </div>
+
+                        <div class="row mt-3 mx-4">
+                            <div class="col-12">
+                                <input class="order-form-input datepicker" placeholder="Selected date" type="text"
+                                    id="date-picker-example">
+                            </div>
+                            <div id="datepicker"></div>
+                            </div>
 
                         <div class="row mt-3 mx-4">
                             <div class="col-12">
@@ -142,7 +145,7 @@
                     <div class="col-12">
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" name="validation" id="validation" value="1">
-                            <label for="validation" class="form-check-label">I know what I need to know</label>
+                            <label for="validation" class="form-check-label">I accept BLOOMIT's terms and conditions.</label>
                         </div>
                     </div>
                 </div>
