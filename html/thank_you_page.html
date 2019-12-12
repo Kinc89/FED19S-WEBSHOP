@@ -17,86 +17,72 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="../main.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
     <link href="../css/main.css" rel="stylesheet" />
     <title>Bloomit</title>
 </head>
 
 <body>
-    <!--NAV-BAR-->
-    <div class="container-fluid main-nav">
-        <nav class="navbar-right navbar-expand navbar-light" role="navigation">
-            <ul class="navbar-nav">
-                <li class="nav-img">
-                    <img src="../img/logga_img/BLOOMIT_logo.png" class="nav-img">
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Shop</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#varukorg.html">
-                        <i class="fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <!--NAVBAR END-->
-
-    <!--STATIC HEADER-->
-    <div class="row">
-        <div class="col-12 static-header2">
-            <img src="../img/carusell_img/carusell2.jpg" alt="Header picture 1">
+<div class="container-fluid">
+        <!--NAV-BAR-->
+        <div class="row main-nav">
+            <nav class="col-12 navbar-right navbar-expand navbar-light" role="navigation">
+                <ul class="navbar-nav">
+                    <li class="nav-img">
+                        <img src="../img/logga_img/BLOOMIT_logo.png" class="nav-img">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#varukorg.html">
+                            <i class="fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </div>
-    <!--STATIC HEADER END-->
-
-    <!--FOOTER-->
-    <footer class="footer-fluid">
-        <div class="container footerinfo">
-            <div class="row">
-                <div class="col-6 col-md-4 col-lg-4">
-                    <div class="bloomitInfo">
-
+        <!--NAVBAR END-->
+        <!--HEADER TEXT-->
+        <!-- <div class="row" id="caruselContainer">
+            <div class="col-12" id="carusellDiv">
+                
+            </div>
+            <div class="col-12 justify-content-center">
+                <a href="html/all_products.html"><button type="button" class="btn btn-outline-secondary headerBtn">To shop</button></a>
+            </div>
+        </div> -->
+    
+        <section class="row justify-content-md-center">
+                <div class="orderinfo text-center mt-4">
+                  <h2>Thanks for your order! </h2>        
+                    <p> This is your order number <u>362184300</u>.</p>
+                    <p>We’ll be in touch soon to let you know when your order has been shipped. </p> 
+                     Best regards, <br>
+                     Pétillante
+                    </p>
+                    <div class="col- 12 text-center">
+                      <a class="btn btn-light text-right" href="../index.html" role="button">New order</a>
+                    </div>
+              </div>
+              
+            </section>
+    
+        <footer>
+                <div class="row justify-content-center footerinfo">
+                    <div class="col-12 footerlogodiv">
+                        <img class="footerlogo-payment-page" src="../img/logga_img/BLOOMIT_flower_logo.png">
                     </div>
                 </div>
-
-
-
-                <div class="col-12 col-md-4 col-lg-4">
-                    <img class="footerlogo" src="../img/logga_img/BLOOMIT_flower_logo.png">
-                </div>
-            </div>
-        </div>
-        <div class="container footerlinks">
-            <div class="row p-3" id="footer_container">
-                <div class="col-9">
-                        <a href="#" class="terms"><u>Terms of use</u></a>
-                        <a href="#" class="terms"><u>Privacy Policy</u></a>
-                </div>
-                <div class="col-3 soMe_container">
-                    <a href="http://www.facebook.com" class="SoMe">
-                        <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
-                    </a>
-                    <a href="http://www.twitter.com" class="SoMe">
-                        <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
-                    </a>
-                    <a href="http://www.instagram.com" class="SoMe">
-                        <i class="fab fa-instagram fa-lg" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!--FOOTER END -->
-    <script src="https://kit.fontawesome.com/9d5595f4e5.js" crossorigin="anonymous"></script>
+                <script src="https://kit.fontawesome.com/9d5595f4e5.js" crossorigin="anonymous"></script>
+            </footer>
+    </div>
 </body>
 
 </html>
