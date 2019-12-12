@@ -228,9 +228,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   justify-content: center;
   padding: 20px; }
-  @media (min-width: 1200px) {
-    .oneProductDescription {
-      margin-right: 60px; } }
 
 .oneProductHeader {
   text-align: center;

@@ -21,11 +21,6 @@
     text-align: center;
     justify-content: center;
     padding: 20px;
-    @include mini-tablet{
-    }
-    @include desktop{
-        margin-right: 60px;
-    }
 } 
 
 .oneProductHeader{
