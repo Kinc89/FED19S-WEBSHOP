@@ -10,9 +10,9 @@ $(document).ready(function(){
     const flowers = JSON.parse(localStorage.getItem("Flowers"));
     // $.urlParam = är en funktion för att hämta ut en parameter som finns i url:en.
     // Parametern finns bara i url:en. Finns inte i localStorage
-    let identifiedFlower = $.urlParam("id");
-    const flower = flowers.find(function(flower){
-        return flower.id == identifiedFlower;  
+    let flowerObject = $.urlParam("id");
+    const identifiedFlower = flowers.find(function(flower1){
+        return flower1.id == flowerObject;  
      })
     
     
@@ -20,13 +20,13 @@ $(document).ready(function(){
     // flowers = hela vår lista med alla objekt 
     // [identifiedFlower] = "Vilket objekt vill du visa?"
     // .img = "jag vill ha egenskapen img". Innehåller text som är en url som pekar ut en bild. Ex. bild.jpg  
-    console.log(flower.img);
-    console.log("Priset är: " + flower.price);
+    console.log(identifiedFlower.img);
+    console.log("Priset är: " + identifiedFlower.price);
 
-    $(".oneProductPicture").attr("src", flower.img);
-    $(".oneProductTitle").text(flower.title);    
-    $(".oneProductDescription").text(flower.description);
-    $(".oneProductPrice").text("Endast: " + flower.price);
+    $(".oneProductPicture").attr("src", identifiedFlower.img);
+    $(".oneProductTitle").text(identifiedFlower.title);    
+    $(".oneProductDescription").text(identifiedFlower.description);
+    $(".oneProductPrice").text(identifiedFlower.price);
     
 
 

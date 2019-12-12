@@ -1,32 +1,39 @@
 @import "mixin.scss";
+@import "fonts.scss";
 
 .oneProductWrapper{
     margin-bottom: 100px;
     margin-top: 40px;
 }
 
+
+.addToCartBtnDiv{
+    text-align: center;
+}
+
 .oneProductImg{
-    border: black solid 1px;
-    padding: 20px;
     @include desktop {
         margin-left: 60px;
     }
 }
 
 .oneProductDescription{
-    border: black solid 1px;
+    text-align: center;
+    justify-content: center;
     padding: 20px;
-    // margin-top: 20px;
     @include mini-tablet{
-        // margin-top: 0;
     }
     @include desktop{
         margin-right: 60px;
     }
 } 
 
+.oneProductHeader{
+    text-align: center;
+    font-family: "'Open Sans', sans-serif";
+}
+
 .oneProductPrice{
-    color: red;
-    font-size: 2em;
-    font-weight: bold;
+    text-align: center;
+    font-size: 18pt;
 }
