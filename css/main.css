@@ -249,13 +249,10 @@ h1, h2, h3, h4, h5, h6 {
 .cartWrapper {
   margin-top: 30px; }
   .cartWrapper .cartProduct .cartProductImg {
-    background-color: lightblue;
     height: 210px; }
   .cartWrapper .cartProduct .cartProductInfo {
-    background-color: lightgray;
     height: 210px; }
   .cartWrapper .cartProduct .cartProductDeleteBtn {
-    background-color: lightseagreen;
     height: 210px; }
     .cartWrapper .cartProduct .cartProductDeleteBtn .deleteBtn {
       padding: 3px;
@@ -266,6 +263,11 @@ h1, h2, h3, h4, h5, h6 {
     border-left: 1px solid darkgrey; }
     .cartWrapper .cartTotals .totalPriceDiv {
       text-align: end; }
+  .cartWrapper .addToCheckoutBtnDiv {
+    text-align: center;
+    margin-top: 20px; }
+    .cartWrapper .addToCheckoutBtnDiv .addToCheckoutBtn {
+      width: 90%; }
 
 .footerinfo {
   margin: 0px; }
