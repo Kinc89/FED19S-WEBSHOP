@@ -1,8 +1,8 @@
 $(document).ready(function () {
-    let backToCartBtn = $("<button>").append(".paymentContainer");
-    $(backToCartBtn).addClass("btn btn-outline-secondary btnInfo").html("Back to cart");
+    // let backToCartBtn = $("<button>").append(".paymentContainer");
+    // $(backToCartBtn).addClass("btn btn-outline-secondary btnInfo").html("Back to cart");
 
-    $( "#datepicker" ).datepicker();
+    // $( "#datepicker" ).datepicker();
 
 
 
