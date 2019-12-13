@@ -42,7 +42,8 @@ footer {
       padding: 5px; }
     footer .footerlinks .soMe_container {
       display: flex;
-      justify-content: end; }
+      justify-content: end;
+      text-align: end; }
     footer .footerlinks #footer_container {
       position: relative;
       background-color: rgba(148, 147, 147, 0.856); }
@@ -144,9 +145,12 @@ footer {
   background-color: rgba(214, 211, 211, 0.856); }
   .section-content .contentbox {
     margin-top: 10px; }
-  .section-content .icon {
-    font-size: 30pt;
-    margin-top: 5px; }
+  .section-content .iconDiv {
+    text-align: center;
+    padding-right: 2px; }
+    .section-content .iconDiv .icon {
+      font-size: 25pt;
+      margin-top: 5px; }
   .section-content h6 {
     font-size: 12pt; }
   .section-content p {
@@ -269,6 +273,11 @@ h1, h2, h3, h4, h5, h6 {
     .cartWrapper .addToCheckoutBtnDiv .addToCheckoutBtn {
       width: 90%; }
 
+.thankyouFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
 .footerinfo {
   margin: 0px; }
   .footerinfo .footerlogo-payment-page {
@@ -323,15 +332,3 @@ body {
   body .testcontainer {
     background-color: pink;
     height: 400px; }
-
-.testbox1 {
-  background-color: blue;
-  height: 200px; }
-
-.testbox2 {
-  background-color: green;
-  height: 200px; }
-
-.testbox3 {
-  background-color: purple;
-  height: 200px; }

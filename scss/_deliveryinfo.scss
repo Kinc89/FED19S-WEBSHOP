@@ -2,19 +2,27 @@
 @import "mixin.scss";
 
 
- // Section delivery info
-  .section-content {
+// Section delivery info
+.section-content {
     background-color: $footerBG;
     
 
     .contentbox {
         margin-top:10px;
     }
-    .icon {
-        font-size: 30pt;
-        margin-top: 5px;
-        @include mini-tablet{
 
+    .iconDiv {
+
+        text-align: center;
+        padding-right: 2px;
+
+        .icon {
+            font-size: 25pt;
+            margin-top: 5px;
+
+            @include mini-tablet{
+
+            }
         }
     }
     
@@ -22,6 +30,7 @@
         font-size: 12pt;
         
     }
+
     p {
         font-size: 10pt;
     }
