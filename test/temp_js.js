@@ -32,7 +32,13 @@ $(document).ready(function(){
             const currentCart = JSON.parse(localStorage.getItem("Cart"));
 
             //1 Sök om produkten finns i ls
-                        
+            $.each(currentCart, function(i, currentFlower) {
+                if(currentFlower.product.id === flower.id) {
+                    currentFlower++
+                }
+            })
+                
+            
             
 
             // Om produkten finns -> count++
