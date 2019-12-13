@@ -17,19 +17,19 @@
     .cartProduct {
         
         .cartProductImg {
-            background-color: lightblue;
+            
             height: 210px;
             
         }
     
         .cartProductInfo {
-            background-color: lightgray;
+           
             height: 210px;
         }
 
           
         .cartProductDeleteBtn {
-            background-color: lightseagreen;
+            
             height: 210px;
 
             .deleteBtn {
@@ -50,4 +50,13 @@
         }
     }
 
+
+    .addToCheckoutBtnDiv {
+        text-align: center;
+        margin-top:20px;
+
+        .addToCheckoutBtn {
+            width: 90%;
+        }
+    }
 }
