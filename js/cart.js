@@ -44,8 +44,7 @@ $(document).ready(function(){
                 cart.splice(i, 1);
                 localStorage.setItem("Cart",JSON.stringify(cart));
                 printCart();
-                
-
+    
             });
             
             subtotal = subtotal + parseInt(currentCartItem.product.price) * currentCartItem.count;
