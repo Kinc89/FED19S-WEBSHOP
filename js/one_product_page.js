@@ -20,13 +20,9 @@ $(document).ready(function(){
         return flower.id == flowerObject;  
     })
     
-    
-    console.log(identifiedFlower);
     // flowers = hela vår lista med alla objekt 
     // [identifiedFlower] = "Vilket objekt vill du visa?"
     // .img = "jag vill ha egenskapen img". Innehåller text som är en url som pekar ut en bild. Ex. bild.jpg  
-    console.log(identifiedFlower.img);
-    console.log("Priset är: " + identifiedFlower.price);
 
     $(".oneProductPicture").attr("src", identifiedFlower.img);
     $(".oneProductTitle").text(identifiedFlower.title);    

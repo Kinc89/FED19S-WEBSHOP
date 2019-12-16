@@ -6,11 +6,24 @@ $(document).ready(function(){
     // Loopa igenom listan för att kunna printa ut våra objekt.
     $.each(cart, function(i, currentCartItem){
         console.log(currentCartItem);
-        $(".cartProductPicture").attr("src", currentCartItem.product.img);
+        let imgcontainer = $("<div>").appendTo(".cartProductDiv").addClass("cartProductImg");
+        $("<img>")
+            .appendTo(imgcontainer)
+            .addClass("cartProductPicture img-fluid")
+            .attr("src", currentCartItem.product.img);
+       
+
+        
+        
+        // let h1HeaderDiv = $("<h1>").html("Say it with flowers").appendTo($("#carusellDiv"));
+        // $(h1HeaderDiv).addClass("carusel_h1");
+
+
     });
 
     // Skapa dynamiskt div-taggar som visar ut bilderna som vi loopar igenom för att visa alla objekten i cartlistan
     
+
     
     console.log(cart);
 
