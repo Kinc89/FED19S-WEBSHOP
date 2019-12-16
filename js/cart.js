@@ -2,7 +2,9 @@ $(document).ready(function(){
 
     // Hela vår cart lista från localStorage
     const cart = JSON.parse(localStorage.getItem("Cart"));
-
+    let subtotal = 0;
+    const shipping = 99;
+    
     // Loopa igenom listan för att kunna printa ut våra objekt.
     $.each(cart, function(i, currentCartItem){
         console.log(currentCartItem);
@@ -35,6 +37,16 @@ $(document).ready(function(){
         $(".cartDeleteBtn").on("click", function(){
 
         });
+       
+        subtotal = subtotal + parseInt(currentCartItem.product.price) * currentCartItem.count;
+        $(".subtotalSum").html(subtotal + " SEK");
+        console.log(currentCartItem.product.price);
+        console.log(currentCartItem.count)
+
+        $(".shipping").html(shipping + " SEK");
+
+        
+        $(".totalSum").html(subtotal + shipping + " SEK");
         
         // let h1HeaderDiv = $("<h1>").html("Say it with flowers").appendTo($("#carusellDiv"));
         // $(h1HeaderDiv).addClass("carusel_h1");
