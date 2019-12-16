@@ -252,16 +252,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .cartWrapper {
   margin-top: 30px; }
-  .cartWrapper .cartProduct .cartProductImg {
-    height: 210px; }
-  .cartWrapper .cartProduct .cartProductInfo {
-    height: 210px; }
-  .cartWrapper .cartProduct .cartProductDeleteBtn {
-    height: 210px; }
-    .cartWrapper .cartProduct .cartProductDeleteBtn .deleteBtn {
-      padding: 3px;
-      width: 100%;
-      font-size: 17pt; }
+  .cartWrapper .cartProductDiv .cartProductImg {
+    margin-top: 10px; }
+  .cartWrapper .cartProductDiv .cartProductInfo {
+    margin-top: 10px; }
+  .cartWrapper .cartProductDiv .cartProductDeleteBtn .cartDeleteBtn {
+    width: 100%;
+    font-size: 35px; }
   .cartWrapper .cartTotals {
     height: 400px;
     border-left: 1px solid darkgrey; }
