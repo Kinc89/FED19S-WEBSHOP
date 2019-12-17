@@ -35,8 +35,84 @@
     }
 }
 
- //Footer
+
+footer {
+    background-color: $footerBG;
+    margin-top: 20px; 
+
+    @include tablet {
+        margin-top: 100px;
+    }
+   
+    .footerdiv {
+        height: 200px;
+
+        @include tablet {
+        height: 150px;
+        padding: 20px;
+        margin-bottom: 30px;
+        margin-top:30px;
+    }
+        .div1 {
+            text-align: center;
+
+            p { 
+                color: $footertext;
+                margin-top: 10px;
+            }
+        }
+
+        .div2 {
+            text-align: center;
+            @include tablet {
+                border-left: 1px $line solid;
+            }
+            p {
+                color: $footertext;
+                margin-top: 10px;
+            }
+        }
+
+        .div3 {
     
+            text-align: center;
+
+            @include tablet {
+            border-left: 1px $line solid;
+            border-right: 1px $line solid;
+            }
+
+            i {
+                margin-top:25px;
+                color: $footertext;
+            }
+        }
+        .div4 {
+            height: 50%;
+            text-align: center;
+            margin-top:6px;
+
+            @include tablet {
+                height: 90%;
+            }
+            
+            .footerlogo3 {
+                height: 100%;
+            }
+
+        }
+    }
+    
+    .footerlinks {
+        background-color: $footerBG2;
+        text-align: center;
+        margin-top: 45px;
+    }
+    
+}
+
+ //Footer
+  /*  
 .footerinfo {
     background-color: $footerBG;
 
@@ -62,7 +138,7 @@
 
             @include desktop {
                 width: 90%;
-                margin-top: 10px;
+                margin-top: 10%;
             }
         }
     }
@@ -96,4 +172,18 @@ footer {
             background-color: $footerBG2;
         }
     }
-}
+
+    .footerlogodiv1 {
+        text-align: center;
+        background-color: $footerBG;
+        height: 180px;
+
+        .footerlogo1 {
+            height: 55%;
+            margin-top: 40px;
+        }
+
+       
+    }
+
+}*/
