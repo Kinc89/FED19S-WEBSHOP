@@ -59,7 +59,7 @@ $(document).ready(function(){
         localStorage.setItem("Cart", JSON.stringify(currentCart));
         console.log(currentCart);
 
-        //$('.cartCount').html();
+        
     });
 
 });
