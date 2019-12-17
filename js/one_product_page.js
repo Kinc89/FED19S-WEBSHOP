@@ -1,9 +1,9 @@
 //const params = (new URL(document.location)).searchParams;    
-    
-    $.urlParam = function(name){
-        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-        return results[1] || 0;
-    }
+
+$.urlParam = function(name){
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    return results[1] || 0;
+}
 
 function CartItem() {
     this.count;
@@ -34,7 +34,7 @@ $(document).ready(function(){
     $(".oneProductPrice").text("Price: " + identifiedFlower.price);
     
 
-     $(".addToCartBtn").on("click", function(){
+    $(".addToCartBtn").on("click", function(){
         const currentCart = JSON.parse(localStorage.getItem("Cart")) || [];
 
         let foundFlower = false;

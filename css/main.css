@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:700&display=swap");
 .main-nav {
   position: relative;
   margin: 0 auto;
@@ -22,32 +26,131 @@
     .main-nav .navbar-right .nav-item .nav-link {
       text-align: end; }
 
-.footerinfo {
-  background-color: rgba(214, 211, 211, 0.856); }
-  .footerinfo .footerlogodiv {
+footer {
+  background-color: rgba(229, 226, 226, 0.856);
+  margin-top: 20px; }
+  @media (min-width: 820px) {
+    footer {
+      margin-top: 100px; } }
+  footer .footerdiv {
+    height: 200px; }
+    @media (min-width: 820px) {
+      footer .footerdiv {
+        height: 150px;
+        padding: 20px;
+        margin-bottom: 30px;
+        margin-top: 30px; } }
+    footer .footerdiv .div1 {
+      text-align: center; }
+      footer .footerdiv .div1 p {
+        color: rgba(66, 65, 65, 0.87);
+        margin-top: 10px; }
+    footer .footerdiv .div2 {
+      text-align: center; }
+      @media (min-width: 820px) {
+        footer .footerdiv .div2 {
+          border-left: 1px rgba(148, 147, 147, 0.856) solid; } }
+      footer .footerdiv .div2 p {
+        color: rgba(66, 65, 65, 0.87);
+        margin-top: 10px; }
+    footer .footerdiv .div3 {
+      text-align: center; }
+      @media (min-width: 820px) {
+        footer .footerdiv .div3 {
+          border-left: 1px rgba(148, 147, 147, 0.856) solid;
+          border-right: 1px rgba(148, 147, 147, 0.856) solid; } }
+      footer .footerdiv .div3 i {
+        margin-top: 25px;
+        color: rgba(66, 65, 65, 0.87); }
+    footer .footerdiv .div4 {
+      height: 50%;
+      text-align: center;
+      margin-top: 6px; }
+      @media (min-width: 820px) {
+        footer .footerdiv .div4 {
+          height: 90%; } }
+      footer .footerdiv .div4 .footerlogo3 {
+        height: 100%; }
+  footer .footerlinks {
+    background-color: rgba(148, 147, 147, 0.856);
     text-align: center;
-    margin-bottom: 15px; }
-    .footerinfo .footerlogodiv .footerlogo {
-      width: 50%; }
-      @media (min-width: 1200px) {
-        .footerinfo .footerlogodiv .footerlogo {
-          width: 90%;
-          margin-top: 10px; } }
+    margin-top: 45px; }
+
+/*  
+.footerinfo {
+    background-color: $footerBG;
+
+    .lineFooter {
+        position: absolute;
+        left: 15px;
+        width: 35px;
+        height: 3px;
+        background-color: #000;
+        
+    }
+
+    .contactInfoBloomit {
+        margin-top: 5px;
+     
+    }
+
+    .footerlogodiv {
+        text-align: center;
+        margin-bottom: 15px;
+        .footerlogo{
+            width: 50%;
+
+            @include desktop {
+                width: 90%;
+                margin-top: 10%;
+            }
+        }
+    }
+}
 
 footer {
-  background-color: rgba(148, 147, 147, 0.856); }
-  footer .footerlinks {
-    background-color: rgba(148, 147, 147, 0.856); }
-    footer .footerlinks .terms {
-      padding: 5px; }
-    footer .footerlinks .soMe_container {
-      display: flex;
-      justify-content: end;
-      text-align: end; }
-    footer .footerlinks #footer_container {
-      position: relative;
-      background-color: rgba(148, 147, 147, 0.856); }
+    background-color: $footerBG2;
+  
 
+
+    .footerlinks {
+        background-color: $footerBG2;
+
+        .terms {
+            //margin-right: 5px;
+            padding: 5px; 
+        }
+
+        .soMe_container{
+            display: flex;
+            justify-content: end;
+            text-align: end;
+        
+            //.SoMe {
+                //margin-right: 10px;
+            //}
+        }
+
+        #footer_container {
+            position: relative;
+            background-color: $footerBG2;
+        }
+    }
+
+    .footerlogodiv1 {
+        text-align: center;
+        background-color: $footerBG;
+        height: 180px;
+
+        .footerlogo1 {
+            height: 55%;
+            margin-top: 40px;
+        }
+
+       
+    }
+
+}*/
 #caruselContainer {
   position: absolute;
   right: 5%;
@@ -70,7 +173,7 @@ footer {
     #caruselContainer {
       top: 30%;
       width: 40%;
-      right: 15%; } }
+      right: 10%; } }
   #caruselContainer .carusel_h1 {
     font-size: 20pt; }
     @media (min-width: 600px) {
@@ -142,7 +245,7 @@ footer {
     padding: 0; }
 
 .section-content {
-  background-color: rgba(214, 211, 211, 0.856); }
+  background-color: rgba(229, 226, 226, 0.856); }
   .section-content .contentbox {
     margin-top: 10px; }
   .section-content .iconDiv {
@@ -269,6 +372,55 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 20px; }
     .cartWrapper .addToCheckoutBtnDiv .addToCheckoutBtn {
       width: 90%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "'Open Sans', sans-serif"; }
+
+.loadingWrapper {
+  text-align: center; }
+  .loadingWrapper .loadingText {
+    font-family: 'Lato', sans-serif;
+    color: rgba(66, 65, 65, 0.87); }
+  .loadingWrapper .loadingDiv {
+    text-align: center; }
+    .loadingWrapper .loadingDiv .loadingLogo {
+      height: 50%;
+      margin-top: 15%; }
+      @media (min-width: 820px) {
+        .loadingWrapper .loadingDiv .loadingLogo {
+          margin-top: 10%; } }
+      @media (min-width: 1200px) {
+        .loadingWrapper .loadingDiv .loadingLogo {
+          margin-top: 7%; } }
+  .loadingWrapper .loading-dots {
+    text-align: center;
+    margin-top: -100px; }
+    .loadingWrapper .loading-dots .dot {
+      display: inline;
+      margin-left: 0.2em;
+      margin-right: 0.2em;
+      position: relative;
+      top: -1em;
+      font-size: 3.5em;
+      opacity: 0;
+      color: rgba(66, 65, 65, 0.87);
+      animation: showHideDot 2.5s ease-in-out infinite; }
+      .loadingWrapper .loading-dots .dot.one {
+        animation-delay: 0.2s; }
+      .loadingWrapper .loading-dots .dot.two {
+        animation-delay: 0.4s; }
+      .loadingWrapper .loading-dots .dot.three {
+        animation-delay: 0.6s; }
+
+@keyframes showHideDot {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  60% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 
 .thankyouFooter {
   position: absolute;
