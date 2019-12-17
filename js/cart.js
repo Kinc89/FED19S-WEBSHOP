@@ -25,10 +25,14 @@ $(document).ready(function(){
                 .appendTo(titlecontainer)
                 .addClass("")
                 .text("Price: " + currentCartItem.product.price);
-            $("<p>")
+                $("<p>")
                 .appendTo(titlecontainer)
                 .addClass("")
                 .text("Article Nr: " + currentCartItem.product.articlenr);
+                $("<p>")
+                .appendTo(titlecontainer)
+                .addClass("")
+                .text("Amount: " + currentCartItem.count);
 
             let deleteBtn = $("<div>").appendTo(".cartProductDiv").addClass("cartProductDeleteBtn col-2");
             $("<button>")
@@ -42,9 +46,41 @@ $(document).ready(function(){
                 cart.splice(i, 1);
                 localStorage.setItem("Cart",JSON.stringify(cart));
                 printCart();
+                updateCartCount();
+
     
             });
-            
+            let plusBtn = $("<div>").appendTo(".cartProductDiv").addClass("cartProductDeleteBtn col-2");
+            $("<button>")
+                .appendTo(plusBtn)
+                .addClass("btn cartDeleteBtn")
+                .text("+");
+            plusBtn.on("click", function(){
+                $.each(cart, function(i, currentFlower) {
+                    if(currentFlower.product.id === currentCartItem.product.id) {
+                        currentFlower.count++;
+                    }
+                });
+                localStorage.setItem("Cart",JSON.stringify(cart));
+                updateCartCount();
+            });
+            let minusBtn = $("<div>").appendTo(".cartProductDiv").addClass("cartProductDeleteBtn col-2");
+            $("<button>")
+                .appendTo(minusBtn)
+                .addClass("btn cartDeleteBtn")
+                .text("-");
+            minusBtn.on("click", function(){
+                $.each(cart, function(i, currentFlower) {
+                    if(currentFlower.product.id === currentCartItem.product.id) {                      
+                        if (currentFlower.count > 0){
+                            currentFlower.count--;
+                        }
+                    }
+                    
+                });
+                localStorage.setItem("Cart",JSON.stringify(cart));
+                updateCartCount();
+            });
             subtotal = subtotal + parseInt(currentCartItem.product.price) * currentCartItem.count;
             $(".subtotalSum").html(subtotal + " SEK");
             console.log(currentCartItem.product.price);
@@ -58,4 +94,5 @@ $(document).ready(function(){
         });
     }
         printCart();
+        updateCartCount();
 });

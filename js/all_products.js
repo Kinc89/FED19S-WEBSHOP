@@ -4,7 +4,7 @@ function CartItem() {
 } 
 
 $(document).ready(function(){
-    
+    updateCartCount();
     let flowers = JSON.parse(localStorage.getItem("Flowers"));
 
     const container = $("#products")
@@ -57,7 +57,7 @@ $(document).ready(function(){
             localStorage.setItem("Cart", JSON.stringify(currentCart));
             console.log(currentCart);
     
-            //$('.cartCount').html();
+            updateCartCount();
         });
     
         // $('#test').append('<span>' test[counter] '</span>');

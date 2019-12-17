@@ -11,7 +11,7 @@ function CartItem() {
 }
 
 $(document).ready(function(){
-
+    updateCartCount();
     const flowers = JSON.parse(localStorage.getItem("Flowers"));
     // $.urlParam = är en funktion för att hämta ut en parameter som finns i url:en.
     // Parametern finns bara i url:en. Finns inte i localStorage
@@ -58,8 +58,7 @@ $(document).ready(function(){
         // Skriv currentCart till ls
         localStorage.setItem("Cart", JSON.stringify(currentCart));
         console.log(currentCart);
-
-        
+        updateCartCount();        
     });
 
 });
