@@ -30,7 +30,7 @@ $(document).ready(function(){
     $(".oneProductPrice").text("Price: " + identifiedFlower.price);
     
 
-     $(".addToCartBtn").on("click", function(){
+    $(".addToCartBtn").on("click", function(){
         const currentCart = JSON.parse(localStorage.getItem("Cart")) || [];
 
         let foundFlower = false;

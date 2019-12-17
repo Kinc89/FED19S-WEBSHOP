@@ -1,8 +1,6 @@
 $(document).ready(function(){
 
     function printCart(){   
-
-        //let updatedList = $(cart).html("");
         // Hela vår cart lista från localStorage
         const cart = JSON.parse(localStorage.getItem("Cart"));
         let subtotal = 0;
@@ -30,7 +28,7 @@ $(document).ready(function(){
             $("<p>")
                 .appendTo(titlecontainer)
                 .addClass("")
-                .text("Articlenr: " + currentCartItem.product.articlenr);
+                .text("Article Nr: " + currentCartItem.product.articlenr);
 
             let deleteBtn = $("<div>").appendTo(".cartProductDiv").addClass("cartProductDeleteBtn col-2");
             $("<button>")
@@ -57,22 +55,7 @@ $(document).ready(function(){
             
             $(".totalSum").html(subtotal + shipping + " SEK");
 
-            
-            
-            // let h1HeaderDiv = $("<h1>").html("Say it with flowers").appendTo($("#carusellDiv"));
-            // $(h1HeaderDiv).addClass("carusel_h1");
-
-
         });
-
-        }
-        // Skapa dynamiskt div-taggar som visar ut bilderna som vi loopar igenom för att visa alla objekten i cartlistan
-
+    }
         printCart();
-
-
-    
-
-
-
 });

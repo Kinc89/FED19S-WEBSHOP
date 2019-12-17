@@ -62,5 +62,18 @@ $(document).ready(function(){
 
     // console.log(id + img);
     
+    let alreadyPlacedOrder = false;
+    $.each(placedOrdersList, function(i, uniqueOrderNr){
+
+        if(placedOrdersList != uniqueOrderNr){
+            let uniqueOrderNr = Math.floor((Math.random() * 0) + 1);
+            $(".randomOrderNr").html(uniqueOrderNr);
+            placedOrdersList.push(uniqueOrderNr);
+        } else{
+            alert("Slut på order nummer");
+
+        }
+
+    });
 
 });
