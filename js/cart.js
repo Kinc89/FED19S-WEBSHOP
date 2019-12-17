@@ -4,6 +4,7 @@ $(document).ready(function(){
     const cart = JSON.parse(localStorage.getItem("Cart"));
     let subtotal = 0;
     const shipping = 99;
+    let cartBadgeCount = 0;
     
     // Loopa igenom listan för att kunna printa ut våra objekt.
     $.each(cart, function(i, currentCartItem){
@@ -51,7 +52,7 @@ $(document).ready(function(){
         // let h1HeaderDiv = $("<h1>").html("Say it with flowers").appendTo($("#carusellDiv"));
         // $(h1HeaderDiv).addClass("carusel_h1");
 
-
+        $(".cartCount").html(currentCartItem.count);
     });
 
     // Skapa dynamiskt div-taggar som visar ut bilderna som vi loopar igenom för att visa alla objekten i cartlistan
@@ -59,6 +60,8 @@ $(document).ready(function(){
 
     
     console.log(cart);
+    // cartBadgeCount = currentCartItem.count;
+    
     
 
 
