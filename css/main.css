@@ -369,6 +369,19 @@ h1, h2, h3, h4, h5, h6 {
     .cartWrapper .addToCheckoutBtnDiv .addToCheckoutBtn {
       width: 90%; }
 
+.loadingWrapper .loadingDiv {
+  height: 800px;
+  text-align: center; }
+  .loadingWrapper .loadingDiv .loadingLogo {
+    height: 30%;
+    margin-top: 15%; }
+    @media (min-width: 820px) {
+      .loadingWrapper .loadingDiv .loadingLogo {
+        margin-top: 10%; } }
+    @media (min-width: 1200px) {
+      .loadingWrapper .loadingDiv .loadingLogo {
+        margin-top: 7%; } }
+
 .thankyouFooter {
   position: absolute;
   bottom: 0;
