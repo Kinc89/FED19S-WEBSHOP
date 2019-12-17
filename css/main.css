@@ -23,7 +23,15 @@
       text-align: end; }
 
 .footerinfo {
-  background-color: rgba(214, 211, 211, 0.856); }
+  background-color: rgba(229, 226, 226, 0.856); }
+  .footerinfo .lineFooter {
+    position: absolute;
+    left: 15px;
+    width: 35px;
+    height: 3px;
+    background-color: #000; }
+  .footerinfo .contactInfoBloomit {
+    margin-top: 5px; }
   .footerinfo .footerlogodiv {
     text-align: center;
     margin-bottom: 15px; }
@@ -70,7 +78,7 @@ footer {
     #caruselContainer {
       top: 30%;
       width: 40%;
-      right: 15%; } }
+      right: 10%; } }
   #caruselContainer .carusel_h1 {
     font-size: 20pt; }
     @media (min-width: 600px) {
@@ -142,7 +150,7 @@ footer {
     padding: 0; }
 
 .section-content {
-  background-color: rgba(214, 211, 211, 0.856); }
+  background-color: rgba(229, 226, 226, 0.856); }
   .section-content .contentbox {
     margin-top: 10px; }
   .section-content .iconDiv {

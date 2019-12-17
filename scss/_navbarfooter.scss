@@ -40,9 +40,19 @@
 .footerinfo {
     background-color: $footerBG;
 
-    //.bloomitInfo{
-        // padding-right: 10px;
-    //}
+    .lineFooter {
+        position: absolute;
+        left: 15px;
+        width: 35px;
+        height: 3px;
+        background-color: #000;
+        
+    }
+
+    .contactInfoBloomit {
+        margin-top: 5px;
+     
+    }
 
     .footerlogodiv {
         text-align: center;
