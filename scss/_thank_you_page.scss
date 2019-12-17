@@ -1,8 +1,32 @@
 @import "colors.scss";
 @import "mixin.scss";
 
-.thankyouFooter {
-position: absolute;
-bottom: 0;
-width: 100%;
+
+.loadingWrapper {
+
+    .loadingDiv {
+        height: 800px;
+        
+        text-align: center;
+    
+        .loadingLogo{
+            height: 30%;
+            margin-top: 15%;
+
+            @include tablet {
+                margin-top:10%;
+            }
+
+            @include desktop {
+                margin-top:7%;
+            }
+        }
+    }
 }
+
+.thankyouFooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+

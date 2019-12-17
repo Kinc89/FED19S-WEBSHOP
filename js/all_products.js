@@ -1,9 +1,13 @@
+function CartItem() {
+    this.count;
+    this.product;
+} 
+
 $(document).ready(function(){
     
     let flowers = JSON.parse(localStorage.getItem("Flowers"));
 
     const container = $("#products")
-
 
     // for(let i = 0; i < flowers.length; i++) {
     //     const flower = flowers[i]
@@ -14,16 +18,48 @@ $(document).ready(function(){
         // container.append("<div class='product'><h2>"+ flower.title + "</h2> <img src='"+ flower.img +"'/></div>")
         let div = $('<div>').addClass("productWrapper col-6 col-lg-3" + ' ' + flower.category);
         let title = $('<div>').addClass("myTitle").html(flower.title);
-        let price = $('<div>').addClass("myPrice").text(flower.price);
+        let price = $('<div>').addClass("myPrice").text(flower.price + " SEK");
         let img = $('<img>').addClass("productImg").attr("src", flower.img).attr("alt", "inspobild");
-        let myBtn = $('<button>')
+        let productInfoBtn = $('<button>')
         .addClass("btn btn-outline-secondary btnInfo")
-        .text("Purchase")
+        .text("More info")
         .attr("alt", "Purchase")
         .on("click", function(){
             window.open("one_product_page.html?id=" + flower.id, "_self")
             
         });
+        let productPurchaseBtn = $('<button>')
+        .addClass("btn btn-outline-secondary btnInfo")
+        .text("Quick shop")
+        .attr("alt", "Purchase")
+        .on("click", function(){
+            const currentCart = JSON.parse(localStorage.getItem("Cart")) || [];
+
+            let foundFlower = false;
+            //1 Sök om produkten finns i ls
+            $.each(currentCart, function(i, currentFlower) {
+                if(currentFlower.product.id === flower.id) {
+                    // Om produkten finns -> count++
+                    currentFlower.count++;
+                    foundFlower = true;
+                }
+            });
+                
+            // Om produkten inte finns, lägg till den i currentCart
+            if(foundFlower === false){
+                let newCartItem = new CartItem();
+                newCartItem.count = 1;
+                newCartItem.product = flower;
+                currentCart.push(newCartItem);
+            }
+                    
+            // Skriv currentCart till ls
+            localStorage.setItem("Cart", JSON.stringify(currentCart));
+            console.log(currentCart);
+    
+            //$('.cartCount').html();
+        });
+    
         // $('#test').append('<span>' test[counter] '</span>');
         // $('<p>Text</p>').appendTo('#Content');
         // div.append(title);
@@ -31,7 +67,8 @@ $(document).ready(function(){
         div.append(img);
         div.append(title);
         div.append(price);
-        div.append(myBtn);
+        div.append(productInfoBtn);
+        div.append(productPurchaseBtn);
         container.append(div);
         // Såhär kan man göra i modern javascript, funkar ej i IE
         // `<div class="imgWrapper col-6 col-lg-3 ${flower.category}">
@@ -49,8 +86,6 @@ $(document).ready(function(){
         // För att få samma kategori ovanför sorteringsknapparna
         $(".categoryName2").html("Birthday flowers")
         $(".categoryDescription2").html("Gifts are kindly requested, but birthday flowers are always welcome! It never goes wrong when you choose to send a crackling bouquet to the one who is now celebrating years. Even better, you can expect this to be the perfect gift. You become today's hero no matter what others choose to give to the birthday child!")
-
-
 
     });
     $("#BtnSort2").click(function(event){

@@ -1,41 +1,35 @@
+
+
 $(document).ready(function(){
+
+    setTimeout(function() {
+        $('.loadingWrapper').hide();
+    }, 2500); 
+
+    $('.container-fluid').hide();
+    
+    setTimeout(function() {
+        $('.container-fluid').show();
+    }, 2500); 
+    
+    
+   
     
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    let placedOrders = JSON.parse(localStorage.getItem("Placed orders"));
-    placedOrdersList = [];
+  
     
     let uniqueOrderNr = Math.floor((Math.random() * 0) + 1);
     let orderNumber  = false;
     $.each(placedOrders, function(i, uniqueOrderNr){
+
+
+    
+
+    let newOrdernr = Math.floor(Math.random()* 5);
+    let orderNr = $(".randomOrderNr").html(newOrdernr);
+    //let selectedOrderNr = orderNr.val;
 
         
         if(uniqueOrderNr === placedOrdersList){
@@ -59,6 +53,7 @@ $(document).ready(function(){
     // Sök om numret finns i ls
 
 
+});
 
     let alreadyPlacedOrder = false;
     $.each(placedOrdersList, function(i, uniqueOrderNr){
