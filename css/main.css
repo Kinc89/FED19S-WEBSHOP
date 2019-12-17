@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:700&display=swap");
 .main-nav {
   position: relative;
   margin: 0 auto;
@@ -369,18 +373,54 @@ h1, h2, h3, h4, h5, h6 {
     .cartWrapper .addToCheckoutBtnDiv .addToCheckoutBtn {
       width: 90%; }
 
-.loadingWrapper .loadingDiv {
-  height: 800px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "'Open Sans', sans-serif"; }
+
+.loadingWrapper {
   text-align: center; }
-  .loadingWrapper .loadingDiv .loadingLogo {
-    height: 30%;
-    margin-top: 15%; }
-    @media (min-width: 820px) {
-      .loadingWrapper .loadingDiv .loadingLogo {
-        margin-top: 10%; } }
-    @media (min-width: 1200px) {
-      .loadingWrapper .loadingDiv .loadingLogo {
-        margin-top: 7%; } }
+  .loadingWrapper .loadingText {
+    font-family: 'Lato', sans-serif;
+    color: rgba(66, 65, 65, 0.87); }
+  .loadingWrapper .loadingDiv {
+    text-align: center; }
+    .loadingWrapper .loadingDiv .loadingLogo {
+      height: 50%;
+      margin-top: 15%; }
+      @media (min-width: 820px) {
+        .loadingWrapper .loadingDiv .loadingLogo {
+          margin-top: 10%; } }
+      @media (min-width: 1200px) {
+        .loadingWrapper .loadingDiv .loadingLogo {
+          margin-top: 7%; } }
+  .loadingWrapper .loading-dots {
+    text-align: center;
+    margin-top: -100px; }
+    .loadingWrapper .loading-dots .dot {
+      display: inline;
+      margin-left: 0.2em;
+      margin-right: 0.2em;
+      position: relative;
+      top: -1em;
+      font-size: 3.5em;
+      opacity: 0;
+      color: rgba(66, 65, 65, 0.87);
+      animation: showHideDot 2.5s ease-in-out infinite; }
+      .loadingWrapper .loading-dots .dot.one {
+        animation-delay: 0.2s; }
+      .loadingWrapper .loading-dots .dot.two {
+        animation-delay: 0.4s; }
+      .loadingWrapper .loading-dots .dot.three {
+        animation-delay: 0.6s; }
+
+@keyframes showHideDot {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  60% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 
 .thankyouFooter {
   position: absolute;
