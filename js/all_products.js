@@ -18,14 +18,15 @@ $(document).ready(function(){
         let price = $('<div>').addClass("myPrice").text(flower.price + " SEK");
         let img = $('<img>').addClass("productImg").attr("src", flower.img).attr("alt", "inspobild");
         let productInfoBtn = $('<button>')
-        .addClass("btn btn-outline-secondary btnInfo")
+        .addClass("btn btn-outline-light btnInfo")
         .text("More info")
         .attr("alt", "Purchase")
         .on("click", function(){
             window.open("one_product_page.html?id=" + flower.id, "_self")
         });
+        let border = $("<span>").addClass("borderLine");
         let productPurchaseBtn = $('<button>')
-        .addClass("btn btn-outline-secondary btnInfo")
+        .addClass("btn btn-outline-light QuickBtn")
         .text("Quick shop")
         .attr("alt", "Purchase")
         .on("click", function(){
@@ -54,6 +55,7 @@ $(document).ready(function(){
         div.append(title);
         div.append(price);
         div.append(productInfoBtn);
+        div.append(border);
         div.append(productPurchaseBtn);
         container.append(div);
         // Såhär kan man göra i modern javascript, funkar ej i IE

@@ -23,7 +23,7 @@ $(document).ready(function(){
     $(".oneProductPicture").attr("src", identifiedFlower.img);
     $(".oneProductTitle").text(identifiedFlower.title);    
     $(".oneProductDescription").text(identifiedFlower.description);
-    $(".oneProductPrice").text("Price: " + identifiedFlower.price);
+    $(".oneProductPrice").text("Price: " + identifiedFlower.price + " SEK");
     $(".addToCartBtn").on("click", function(){
         const currentCart = JSON.parse(localStorage.getItem("Cart")) || [];
         let foundFlower = false;
