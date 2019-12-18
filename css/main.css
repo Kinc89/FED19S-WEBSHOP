@@ -376,6 +376,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 10px; }
   .cartWrapper .cartProductDiv .cartProductInfo {
     margin-top: 10px; }
+    .cartWrapper .cartProductDiv .cartProductInfo .countBtnMinus {
+      font-size: 35px; }
+    .cartWrapper .cartProductDiv .cartProductInfo .countBtnPlus {
+      font-size: 30px; }
   .cartWrapper .cartProductDiv .cartProductDeleteBtn .cartDeleteBtn {
     width: 100%;
     font-size: 35px; }
