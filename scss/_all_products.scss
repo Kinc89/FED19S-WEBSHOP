@@ -1,20 +1,6 @@
-$headerTextColor: rgb(56, 55, 55);
+@import "mixin.scss";
+@import "colors.scss";
 
-@mixin phone {
-    @media (max-width: 600px) { @content; }    
-}
-@mixin mini-tablet {
-    @media (min-width: 600px) { @content; }    
-}
-@mixin tablet {
-    @media (min-width: 820px) { @content; }    
-}
-@mixin mini-desktop {
-    @media (min-width: 1000px) { @content; }
-}
-@mixin desktop {
-    @media (min-width: 1200px) { @content; }    
-}
 
 .categoryName{
     font-size: 25px;
@@ -59,7 +45,31 @@ $headerTextColor: rgb(56, 55, 55);
     padding: 5px;
     text-align: center;
 
-    .productImg {
+    .productImg{
         width: 100%;
     }
+    .btnInfo{
+        border-style: none;
+        margin-right: 5px;
+        color: $footertext;
+        
+    }
+
+    .borderLine{
+        width: 40px;
+        border-left: black solid 1px;
+        @include desktop{
+            margin-left: 10px;
+        }
+    }
+
+    .QuickBtn{
+        border-style: none;
+        color: $footertext;
+        margin-left: 5px;
+        @include desktop{
+            margin-left: 10px;
+        }
+    }
+    
 }
