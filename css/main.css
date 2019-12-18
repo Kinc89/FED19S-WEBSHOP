@@ -76,81 +76,6 @@ footer {
     text-align: center;
     margin-top: 45px; }
 
-/*  
-.footerinfo {
-    background-color: $footerBG;
-
-    .lineFooter {
-        position: absolute;
-        left: 15px;
-        width: 35px;
-        height: 3px;
-        background-color: #000;
-        
-    }
-
-    .contactInfoBloomit {
-        margin-top: 5px;
-     
-    }
-
-    .footerlogodiv {
-        text-align: center;
-        margin-bottom: 15px;
-        .footerlogo{
-            width: 50%;
-
-            @include desktop {
-                width: 90%;
-                margin-top: 10%;
-            }
-        }
-    }
-}
-
-footer {
-    background-color: $footerBG2;
-  
-
-
-    .footerlinks {
-        background-color: $footerBG2;
-
-        .terms {
-            //margin-right: 5px;
-            padding: 5px; 
-        }
-
-        .soMe_container{
-            display: flex;
-            justify-content: end;
-            text-align: end;
-        
-            //.SoMe {
-                //margin-right: 10px;
-            //}
-        }
-
-        #footer_container {
-            position: relative;
-            background-color: $footerBG2;
-        }
-    }
-
-    .footerlogodiv1 {
-        text-align: center;
-        background-color: $footerBG;
-        height: 180px;
-
-        .footerlogo1 {
-            height: 55%;
-            margin-top: 40px;
-        }
-
-       
-    }
-
-}*/
 #caruselContainer {
   position: absolute;
   right: 5%;
@@ -489,8 +414,3 @@ body {
     color: rgba(66, 65, 65, 0.87); }
     body a :hover {
       color: #272626; }
-  body .contentcontainer {
-    text-align: center; }
-  body .testcontainer {
-    background-color: pink;
-    height: 400px; }

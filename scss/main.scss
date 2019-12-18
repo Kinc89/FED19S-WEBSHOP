@@ -10,47 +10,10 @@
 @import "thank_you_page.scss";
 @import "payment_page.scss";
 @import "fonts.scss";
+@import "body.scss";
 
 
 
-body {
-    font-family: 'Open Sans', sans-serif; 
-    margin:0;
-    padding: 0;
-    background: $background;
-
-    .container-fluid { 
-        padding:0;
-
-        .row {
-            margin-left:0;
-            margin-right: 0;
-        }
-    }
-
-
-    a {
-        color: $linkcolor;
-
-        :hover{
-            color: $linkhover;
-        }   
-    }
-
-    //Content about us
-    .contentcontainer {
-        text-align: center; 
-    }
-    
-    .testcontainer {
-        background-color: pink;
-        height: 400px;
-    }
-   
-
-
-    
-}
  
 
 
