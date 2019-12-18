@@ -9,10 +9,10 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/shared.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/9d5595f4e5.js" crossorigin="anonymous"></script>
     <link href="css/main.css" rel="stylesheet" />
-
     <title>Document</title>
 </head>
 <body>
@@ -36,6 +36,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./html/cart.html">
                         <i class="fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+                        <span class="cartCount"></span>
                     </a>
                 </li>
             </ul>
@@ -45,13 +46,11 @@
     <!--HEADER TEXT-->
     <div class="row" id="caruselContainer">
         <div class="col-12" id="carusellDiv">
-            
         </div>
         <div class="col-12 justify-content-center">
             <a href="html/all_products.html"><button type="button" class="btn btn-outline-secondary headerBtn">To shop</button></a>
         </div>
     </div>
-
     <!--STATIC HEADER-->
     <div class="row">
         <div class="col-12 static-header p-0">
@@ -59,9 +58,7 @@
         </div>
     </div>
     <!--STATIC HEADER END-->
-
     <!--CAROUSEL-->
- 
         <div class="row carousel_bloomit">
             <div class="col-12 nomargin">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -87,11 +84,8 @@
                 </div>
             </div>
         </div>
-
     <!--CAROUSEL END-->
-
     <!-- Section delivery info -->
-
     <div class="row section-content">
         <div class="col-sm-6 col-md-4">
             <div class="row contentbox">
@@ -127,7 +121,6 @@
             </div>
         </div>
     </div>
-
     <div class="row justify-content-center contentcontainer mt-3 mb-3">
         <div class="col-sm-11 col-lg-8">
             <p>  
@@ -139,9 +132,7 @@
             </p>
         </div>
     </div>
-
     <!-- Inspobilder + Knapp-->
-
     <div class="row justify-content-center">
         <div class="col-11">
             <div class="row p-2">
@@ -173,7 +164,6 @@
             To Shop
         </button></a>
     </div>
-    
     <div class="row justify-content-center contentcontainer mt-3 mb-5">
         <div class="col-sm-11 col-lg-10">
             <p>
@@ -186,13 +176,7 @@
             </p>
         </div>
     </div>
-   
     <!--FOOTER-->
-
-    <!-- Footern är nu relative (absolute gjorde så att resten av sidan trillar bakom. Det kan köras om vi har en fast offset-margin som puttar allt upp från den)
-    Footern behöver dock göras större, och fästas längst ner. -->
-   
-
     <footer>
         <div class="row">
             <div class="col-12">
@@ -224,9 +208,6 @@
                             <img class="footerlogo3" src="img/logga_img/BLOOMIT_flower_logo.png">
                         </div>
                 </div>
-               
-                   
-           
             </div>
         </div>
         <div class="row footerlinks p-1">
@@ -236,67 +217,6 @@
             </div>
         </div>
     </footer>
-
-<!--
-    <footer>
-        <div class="row justify-content-center footerinfo">
-            <div class="col-9">
-                <div class="row justify-content-center">
-                    <div class="col-12 mt-3 bloomitInfo">
-                        <h4>Bloomit</h4>
-                    </div>
-                    <div class="col-6 contactInfoBloomit">
-                        <span class="lineFooter"></span>
-                        <p class="contactInfoBloomit">
-                            We who run Bloomit have a great deal of experience from a flower shop, 
-                            which means that we have developed and customized our webshop and customer service 
-                            so that it is complete for both consumer and shop. </p>
-                    </div>
-
-                    <div class="col-6 contactInfoBloomit">
-                        <span class="lineFooter"></span>
-                        <p class="contactInfoBloomit">
-                        Agatvägen 18<br>
-                        16860 Bromma<br>
-                        org nr 559280-6386<br>
-                        Bloomit AB</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-2 footerlogodiv">
-                <!--<img class="footerlogo" src="img/logga_img/BLOOMIT_flower_logo.png">--
-            </div>
-            
-        </div>
-        <div class="row justify-content-center footerlogodiv1">
-                <img class="footerlogo1" src="img/logga_img/BLOOMIT_flower_logo.png">
-            </div>
-        <div class="row p-3 footerlinks">
-            <div class="col-9">
-                <a href="#" class="terms"><u>Terms of use</u></a>
-                <a href="#" class="terms"><u>Privacy Policy</u></a>
-            </div>
-            <div class="col-3 soMe_container">
-                <a href="http://www.facebook.com" class="SoMe">
-                    <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
-                </a>
-                <a href="http://www.twitter.com" class="SoMe">
-                    <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
-                </a>
-                <a href="http://www.instagram.com" class="SoMe">
-                    <i class="fab fa-instagram fa-lg" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-       
-    
-    </footer>-->
-
-    <!--FOOTER END 
-    
-    <p>We who run Bloomit have a great deal of experience from a flower shop, which means that we have developed and customized our webshop and customer service so that it is complete for both consumer and shop. We know a great deal about flowers and service and this makes us unique from our competitors.
-    -->
-
 </div>
 </body>
 </html>

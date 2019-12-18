@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,11 +16,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/shared.js"></script>
     <script type="text/javascript" src="../js/cart.js"></script>
     <link href="../css/main.css" rel="stylesheet" />
     <title>Bloomit - Cart</title>
 </head>
-
 <body>
 <div class="container-fluid">
     <!--NAV-BAR-->
@@ -43,23 +42,19 @@
                 <li class="nav-item">
                     <a class="nav-link" href="../html/cart.html">
                         <i class="fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+                        <span class="cartCount"></span>
                     </a>
                 </li>
             </ul>
         </nav>
     </div>
     <!--NAVBAR END-->
-
     <!--CONTENT-->
-
-    
     <div class="row mb-5">
         <div class="col-12 cartheader">
             <h2>Shoppingbag</h2>
         </div>
     </div>
-
-    
     <div class="row justify-content-center cartWrapper">
         <!--SHOPPINGBAG-->
         <div class="col-12 col-md-7 cartProduct">
@@ -67,17 +62,6 @@
                 <h5>Products</h5>
             </div>
             <div class="row cartProductDiv">
-                <!-- <div class="col-3 cartProductImg">
-                    <img class="cartProductPicture img-fluid">
-                </div> 
-                <div class="col-8 cartProductInfo">
-
-                </div>
-                <div class="col-1 cartProductDeleteBtn">
-                    <button type="button" class="btn deleteBtn"><i class="fas fa-times"></i></button>                
-                </div>
-                -->
-                
             </div>
         </div>
         <!--CART TOTALS-->
@@ -104,15 +88,12 @@
                     <p class="totalSum"></p> 
                     <hr> 
                 </div>
-
                 <div class="col-12 addToCheckoutBtnDiv">
                     <a href="payment_page.html"><button type="button" class="addToCheckoutBtn btn btn-outline-secondary m-1">Proceed to checkout</button></a>
                 </div>
             </div>
         </div>
     </div>
-
-
     <!--FOOTER-->
     <footer>
         <div class="row justify-content-center footerinfo mt-3">
@@ -135,9 +116,6 @@
                 <img class="footerlogo" src="../img/logga_img/BLOOMIT_flower_logo.png">
             </div>
         </div>
-        
-
-    
         <div class="row p-3 footerlinks">
             <div class="col-9">
                 <a href="#" class="terms"><u>Terms of use</u></a>
@@ -155,10 +133,8 @@
                 </a>
             </div>
         </div>
-
     <!--FOOTER END -->
     <script src="https://kit.fontawesome.com/9d5595f4e5.js" crossorigin="anonymous"></script>
 </div>
 </body>
-
 </html>

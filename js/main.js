@@ -31,8 +31,7 @@ $(document).ready(function(){
         {id: '18', title: 'Wild garden', price: 799, articlenr: 431932, description: 'All of our flower products are individually crafted from the best blossoms daily. If any flower shown is unavailable for any reason, we may make a substitution of equal or greater value in similar color to ensure timely delivery.', img: "../img/products_img/season_flowers/seasonflowers3.jpg", category: "Seasonflowers" },
         {id: '19', title: 'Summerday', price: 899, articlenr: 763592, description: 'All of our flower products are individually crafted from the best blossoms daily. If any flower shown is unavailable for any reason, we may make a substitution of equal or greater value in similar color to ensure timely delivery.', img: "../img/products_img/season_flowers/seasonflowers4.jpg", category: "Seasonflowers" },
         {id: '20', title: 'Sparkle forest', price: 540, articlenr: 267839, description: 'All of our flower products are individually crafted from the best blossoms daily. If any flower shown is unavailable for any reason, we may make a substitution of equal or greater value in similar color to ensure timely delivery.', img: "../img/products_img/season_flowers/seasonflowers5.jpg", category: "Seasonflowers" },
-
     ];
-
+    updateCartCount();
     localStorage.setItem("Flowers", JSON.stringify(flowers));
 });
