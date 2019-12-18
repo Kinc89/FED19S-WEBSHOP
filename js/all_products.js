@@ -2,18 +2,15 @@ function CartItem() {
     this.count;
     this.product;
 } 
-
 $(document).ready(function(){
     updateCartCount();
     let flowers = JSON.parse(localStorage.getItem("Flowers"));
-
     const container = $("#products")
-
+    // Nedan är en vanlig forloop, medans den som används är 'modern'
     // for(let i = 0; i < flowers.length; i++) {
     //     const flower = flowers[i]
     //     console.log(flower)
     // }
-
     for (const flower of flowers){
         // container.append("<div class='product'><h2>"+ flower.title + "</h2> <img src='"+ flower.img +"'/></div>")
         let div = $('<div>').addClass("productWrapper col-6 col-lg-3" + ' ' + flower.category);
@@ -26,7 +23,6 @@ $(document).ready(function(){
         .attr("alt", "Purchase")
         .on("click", function(){
             window.open("one_product_page.html?id=" + flower.id, "_self")
-            
         });
         let productPurchaseBtn = $('<button>')
         .addClass("btn btn-outline-secondary btnInfo")
@@ -34,7 +30,6 @@ $(document).ready(function(){
         .attr("alt", "Purchase")
         .on("click", function(){
             const currentCart = JSON.parse(localStorage.getItem("Cart")) || [];
-
             let foundFlower = false;
             //1 Sök om produkten finns i ls
             $.each(currentCart, function(i, currentFlower) {
@@ -44,26 +39,17 @@ $(document).ready(function(){
                     foundFlower = true;
                 }
             });
-                
             // Om produkten inte finns, lägg till den i currentCart
             if(foundFlower === false){
                 let newCartItem = new CartItem();
                 newCartItem.count = 1;
                 newCartItem.product = flower;
                 currentCart.push(newCartItem);
-            }
-                    
+            }       
             // Skriv currentCart till ls
             localStorage.setItem("Cart", JSON.stringify(currentCart));
-            console.log(currentCart);
-    
             updateCartCount();
         });
-    
-        // $('#test').append('<span>' test[counter] '</span>');
-        // $('<p>Text</p>').appendTo('#Content');
-        // div.append(title);
-    
         div.append(img);
         div.append(title);
         div.append(price);
@@ -75,7 +61,6 @@ $(document).ready(function(){
         //     <img class="inspoimg" src="${flower.img}" alt="inspobild" />
         // </div>`
     }
-
     $("#BtnSort1").click(function(event){
         // För att sortera fram rätt kategori
         $(".productWrapper").not(".Birthdayflowers").hide()
@@ -86,7 +71,6 @@ $(document).ready(function(){
         // För att få samma kategori ovanför sorteringsknapparna
         $(".categoryName2").html("Birthday flowers")
         $(".categoryDescription2").html("Gifts are kindly requested, but birthday flowers are always welcome! It never goes wrong when you choose to send a crackling bouquet to the one who is now celebrating years. Even better, you can expect this to be the perfect gift. You become today's hero no matter what others choose to give to the birthday child!")
-
     });
     $("#BtnSort2").click(function(event){
         // För att sortera fram rätt kategori

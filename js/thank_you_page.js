@@ -1,53 +1,30 @@
-
-
 $(document).ready(function(){
-
+    
     setTimeout(function() {
         $('.loadingWrapper').hide();
     }, 2500); 
-
     $('.container-fluid').hide();
-    
     setTimeout(function() {
         $('.container-fluid').show();
     }, 2500); 
-    
-    
-   
-    
-    
-    
-    
-  
-    
+    localStorage.removeItem("Cart");
     let uniqueOrderNr = Math.floor((Math.random() * 0) + 1);
     let orderNumber  = false;
     $.each(placedOrders, function(i, uniqueOrderNr){
-
-
-    
-
     let newOrdernr = Math.floor(Math.random()* 5);
     let orderNr = $(".randomOrderNr").html(newOrdernr);
-    //let selectedOrderNr = orderNr.val;
-
-        
+    //let selectedOrderNr = orderNr.val; 
         if(uniqueOrderNr === placedOrdersList){
             uniqueOrderNr;
             orderNumber = true;
-        } 
-        
+        }    
         if(orderNumber === false){
             placedOrdersList.push(uniqueOrderNr);
             $(".randomOrderNr").html(uniqueOrderNr);
-
         }
-        localStorage.setItem("Placed orders", JSON.stringify(placedOrdersList));
-    
+        localStorage.setItem("Placed orders", JSON.stringify(placedOrdersList)); 
+        
     });
-    
-    
-
 /*
 
     // Sök om numret finns i ls
