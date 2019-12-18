@@ -22,7 +22,7 @@ $(document).ready(function(){
             $("<p>")
                 .appendTo(titlecontainer)
                 .addClass("")
-                .text("Price: " + currentCartItem.product.price);
+                .html("Price: " + currentCartItem.product.price);
                 $("<p>")
                 .appendTo(titlecontainer)
                 .addClass("")
@@ -30,7 +30,7 @@ $(document).ready(function(){
                 $("<p>")
                 .appendTo(titlecontainer)
                 .addClass("")
-                .text("Amount: " + currentCartItem.count);
+                .text("Quantity: " + currentCartItem.count);
             let deleteBtn = $("<div>").appendTo(".cartProductDiv").addClass("cartProductDeleteBtn col-2");
             $("<button>")
                 .appendTo(deleteBtn)
@@ -45,23 +45,8 @@ $(document).ready(function(){
                 printCart();
                 updateCartCount();
             });
-            let plusBtn = $("<div>").appendTo(".cartProductDiv").addClass("cartProductDeleteBtn col-2");
-            $("<button>")
-                .appendTo(plusBtn)
-                .addClass("btn cartDeleteBtn")
-                .text("+");
-            plusBtn.on("click", function(){
-                $.each(cart, function(i, currentFlower) {
-                    if(currentFlower.product.id === currentCartItem.product.id) {
-                        currentFlower.count++;
-                    }
-                });
-                localStorage.setItem("Cart",JSON.stringify(cart));
-                updateCartCount();
-                printCart();
-            });
-            let minusBtn = $("<div>").appendTo(".cartProductDiv").addClass("cartProductDeleteBtn col-2");
-            $("<button>")
+            let minusBtn = $("<span>").appendTo(titlecontainer);
+            $("<button>").addClass("countBtnMinus")
                 .appendTo(minusBtn)
                 .addClass("btn cartDeleteBtn")
                 .text("-");
@@ -71,6 +56,21 @@ $(document).ready(function(){
                         if (currentFlower.count > 0){
                             currentFlower.count--;
                         }
+                    }
+                });
+                localStorage.setItem("Cart",JSON.stringify(cart));
+                updateCartCount();
+                printCart();
+            });
+            let plusBtn = $("<span>").appendTo(titlecontainer);
+            $("<button>").addClass("countBtnPlus")
+                .appendTo(plusBtn)
+                .addClass("btn cartDeleteBtn")
+                .text("+");
+            plusBtn.on("click", function(){
+                $.each(cart, function(i, currentFlower) {
+                    if(currentFlower.product.id === currentCartItem.product.id) {
+                        currentFlower.count++;
                     }
                 });
                 localStorage.setItem("Cart",JSON.stringify(cart));
