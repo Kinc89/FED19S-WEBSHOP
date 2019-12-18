@@ -62,7 +62,7 @@
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <label class="order-form-label">Email</label>
-                                    <input class="form-control order-form-input" placeholder="Email" required>
+                                    <input type="email" class="form-control order-form-input" placeholder="Email" required>
                                     <div class="invalid-feedback">
                                         Please enter your email.
                                     </div>
@@ -154,7 +154,7 @@
                                 </div>
                                 <div class="col-12 col-sm-6 mt-2 pr-sm-2">
                                     <label class="order-form-label">Select a date</label>
-                                    <input class="form-control order-form-input" placeholder="Ex. 1/3 2019" required>
+                                    <input type="date" class="form-control order-form-input" required>
                                     <div class="invalid-feedback">
                                         Please enter a vaild date.
                                     </div>
@@ -163,8 +163,8 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-6 mt-2 pl-sm-0">
-                                    <label class="order-form-label">Type in the time for your delivery</label>
-                                    <input class="form-control order-form-input floatNumber" placeholder="Ex. 12:30" required>
+                                    <label class="order-form-label">Select time</label>
+                                    <input type="time" class="form-control order-form-input floatNumber" required>
                                     <div class="invalid-feedback">
                                         Please enter a vaild time.
                                     </div>
@@ -198,8 +198,8 @@
                                     Thank you!
                                 </div>
                             </div>
-                            <div class="col-12 mt-2">
-                                <input class="form-control order-form-input" placeholder="Card Number" required>
+                            <div class="col-9 mt-2">
+                                <input class="form-control order-form-input" placeholder="Card Number" required >
                                 <div class="invalid-feedback">
                                     Please enter the card number.
                                 </div>
@@ -207,6 +207,10 @@
                                     Thank you!
                                 </div>
                             </div>
+                            <div class="col-3 p-0">
+                                    <i class="fab fa-cc-mastercard"></i>
+                                    <i class="fab fa-cc-visa"></i>
+                                </div>
                             <div class="col-12 col-sm-6 col-md-4 mt-2 pr-sm-2 pr-md-2">
                                 <input class="form-control order-form-input" placeholder="Expiry Month" required>
                                 <div class="invalid-feedback">

@@ -43,10 +43,17 @@
         line-height: 1.2em;
         background-color: transparent;
         border-color: #cccccc;
+        
+        
       }
     
       .btn-submit:hover {
         background-color: #090909 !important;
+      }
+
+      .fa-cc-mastercard, .fa-cc-visa{
+        font-size: 30px;
+        margin-top: 10px;
       }
   }
 

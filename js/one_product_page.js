@@ -13,9 +13,9 @@ $(document).ready(function(){
     const flowers = JSON.parse(localStorage.getItem("Flowers"));
     // $.urlParam = är en funktion för att hämta ut en parameter som finns i url:en.
     // Parametern finns bara i url:en. Finns inte i localStorage
-    let flowerObject = $.urlParam("id");
+    let flowerID = $.urlParam("id");
     const identifiedFlower = flowers.find(function(flower){
-        return flower.id == flowerObject;  
+        return flower.id == flowerID;  
     })
     // flowers = hela vår lista med alla objekt 
     // [identifiedFlower] = "Vilket objekt vill du visa?"
@@ -28,6 +28,8 @@ $(document).ready(function(){
         const currentCart = JSON.parse(localStorage.getItem("Cart")) || [];
         let foundFlower = false;
         //1 Sök om produkten finns i ls
+        // i = positionen 
+        // currentFlower = bara ett namn för det specifika objektet som man tryckt på. 
         $.each(currentCart, function(i, currentFlower) {
             if(currentFlower.product.id === identifiedFlower.id) {
                 // Om produkten finns -> count++
