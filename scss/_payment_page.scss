@@ -2,11 +2,20 @@
 
 .footerinfo{
     margin: 0px;
-    .footerlogo-payment-page{
+    .footer-payment-logodiv{ 
+      text-align: center;
+
+      .footerlogo-payment-page{
         justify-content: center;
         max-width: 100%;
-        max-height: 200px;    
+        max-height: 150px;  
+        
+        @include tablet {
+          max-height: 200px; 
+        }
     }
+    }
+   
 }
 
 .orderForm .container {

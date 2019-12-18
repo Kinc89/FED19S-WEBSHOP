@@ -425,14 +425,20 @@ h1, h2, h3, h4, h5, h6 {
 .thankyouFooter {
   position: absolute;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 
 .footerinfo {
   margin: 0px; }
-  .footerinfo .footerlogo-payment-page {
-    justify-content: center;
-    max-width: 100%;
-    max-height: 200px; }
+  .footerinfo .footer-payment-logodiv {
+    text-align: center; }
+    .footerinfo .footer-payment-logodiv .footerlogo-payment-page {
+      justify-content: center;
+      max-width: 100%;
+      max-height: 150px; }
+      @media (min-width: 820px) {
+        .footerinfo .footer-payment-logodiv .footerlogo-payment-page {
+          max-height: 200px; } }
 
 .orderForm .container {
   background-color: whitesmoke;
