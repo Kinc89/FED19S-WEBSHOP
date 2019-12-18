@@ -458,6 +458,9 @@ h1, h2, h3, h4, h5, h6 {
     border-color: #cccccc; }
   .orderForm .container .btn-submit:hover {
     background-color: #090909 !important; }
+  .orderForm .container .fa-cc-mastercard, .orderForm .container .fa-cc-visa {
+    font-size: 30px;
+    margin-top: 10px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "'Open Sans', sans-serif"; }
