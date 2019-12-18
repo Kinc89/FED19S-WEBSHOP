@@ -7,6 +7,7 @@ $(document).ready(function(){
     setTimeout(function() {
         $('.container-fluid').show();
     }, 2500); 
+    localStorage.removeItem("Cart");
     let uniqueOrderNr = Math.floor((Math.random() * 999999) + 100);
     let placedOrders = JSON.parse(localStorage.getItem("Placed orders")) || [];
     while (placedOrders.indexOf(uniqueOrderNr) >= 0) {
