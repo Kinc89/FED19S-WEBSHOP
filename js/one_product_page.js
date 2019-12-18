@@ -4,12 +4,10 @@ $.urlParam = function(name){
     var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
     return results[1] || 0;
 }
-
 function CartItem() {
     this.count;
     this.product;
 }
-
 $(document).ready(function(){
     updateCartCount();
     const flowers = JSON.parse(localStorage.getItem("Flowers"));
@@ -19,24 +17,15 @@ $(document).ready(function(){
     const identifiedFlower = flowers.find(function(flower){
         return flower.id == flowerObject;  
     })
-    
-    
-    console.log(identifiedFlower);
     // flowers = hela vår lista med alla objekt 
     // [identifiedFlower] = "Vilket objekt vill du visa?"
     // .img = "jag vill ha egenskapen img". Innehåller text som är en url som pekar ut en bild. Ex. bild.jpg  
-    console.log(identifiedFlower.img);
-    console.log("Priset är: " + identifiedFlower.price);
-
     $(".oneProductPicture").attr("src", identifiedFlower.img);
     $(".oneProductTitle").text(identifiedFlower.title);    
     $(".oneProductDescription").text(identifiedFlower.description);
     $(".oneProductPrice").text("Price: " + identifiedFlower.price);
-    
-
     $(".addToCartBtn").on("click", function(){
         const currentCart = JSON.parse(localStorage.getItem("Cart")) || [];
-
         let foundFlower = false;
         //1 Sök om produkten finns i ls
         $.each(currentCart, function(i, currentFlower) {
@@ -46,18 +35,15 @@ $(document).ready(function(){
                 foundFlower = true;
             }
         });
-            
         // Om produkten inte finns, lägg till den i currentCart
         if(foundFlower === false){
             let newCartItem = new CartItem();
             newCartItem.count = 1;
             newCartItem.product = identifiedFlower;
             currentCart.push(newCartItem);
-        }
-                
+        }    
         // Skriv currentCart till ls
         localStorage.setItem("Cart", JSON.stringify(currentCart));
-        console.log(currentCart);
         updateCartCount();        
     });
 
