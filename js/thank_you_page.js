@@ -7,6 +7,7 @@ $(document).ready(function(){
     setTimeout(function() {
         $('.container-fluid').show();
     }, 2500); 
+    localStorage.removeItem("Cart");
     let uniqueOrderNr = Math.floor((Math.random() * 0) + 1);
     let orderNumber  = false;
     $.each(placedOrders, function(i, uniqueOrderNr){
@@ -22,6 +23,7 @@ $(document).ready(function(){
             $(".randomOrderNr").html(uniqueOrderNr);
         }
         localStorage.setItem("Placed orders", JSON.stringify(placedOrdersList)); 
+        
     });
 /*
 
