@@ -199,6 +199,9 @@ body .imgcontainer {
     width: 170px;
     font-size: 16pt; }
 
+body .aboutContent {
+  text-align: center; }
+
 .categoryName {
   font-size: 25px;
   z-index: 2; }
@@ -264,7 +267,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .oneProductWrapper {
   margin-bottom: 100px;
-  margin-top: 20px; }
+  margin-top: 50px; }
 
 .oneProductTextWrapper {
   margin-top: 30px; }
@@ -288,6 +291,9 @@ h1, h2, h3, h4, h5, h6 {
 .oneProductPrice {
   text-align: center;
   font-size: 18pt; }
+
+.cartBody {
+  margin-top: 50px; }
 
 .cartheader {
   text-align: center; }
@@ -368,8 +374,11 @@ h1, h2, h3, h4, h5, h6 {
   100% {
     opacity: 0; } }
 
+.thankyouBody {
+  margin-top: 50px; }
+
 .emptyDiv {
-  height: 80px; }
+  height: 40px; }
 
 .thankyouFooter {
   position: fixed;
@@ -435,3 +444,5 @@ body {
     color: rgba(66, 65, 65, 0.87); }
     body a :hover {
       color: #272626; }
+  body .aboutUSContent {
+    text-align: center; }

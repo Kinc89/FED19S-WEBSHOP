@@ -5,13 +5,12 @@
 
 .loadingWrapper {
     text-align: center;
-    
+
     .loadingText{
         font-family: 'Lato', sans-serif;
         color: $footertext;
     }
     
-
     .loadingDiv {
         
         text-align: center;
@@ -57,15 +56,15 @@
         60% { opacity: 1; }
         100% { opacity: 0; }
     }
-    
-  
-          
-    
+}
+
+.thankyouBody {
+    margin-top:50px;
 }
 
 .emptyDiv{
-    height: 80px;
-  }
+    height: 40px;
+}
 
 .thankyouFooter {
     position: fixed;
