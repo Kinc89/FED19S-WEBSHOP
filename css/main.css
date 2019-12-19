@@ -27,7 +27,7 @@
       text-align: end; }
 
 footer {
-  background-color: rgba(229, 226, 226, 0.856);
+  background-color: #e5e2e2;
   margin-top: 20px; }
   @media (min-width: 820px) {
     footer {
@@ -170,7 +170,7 @@ footer {
     padding: 0; }
 
 .section-content {
-  background-color: rgba(229, 226, 226, 0.856); }
+  background-color: #e5e2e2; }
   .section-content .contentbox {
     margin-top: 10px; }
   .section-content .iconDiv {
