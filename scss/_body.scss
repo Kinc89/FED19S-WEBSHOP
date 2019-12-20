@@ -3,24 +3,19 @@ body {
     margin:0;
     padding: 0;
     background: $background;
-
     .container-fluid { 
         padding:0;
-
         .row {
             margin-left:0;
             margin-right: 0;
         }
     }
-
     a {
         color: $linkcolor;
-
         :hover{
             color: $linkhover;
         }   
     }
-
     .aboutUSContent {
         text-align: center;
     }

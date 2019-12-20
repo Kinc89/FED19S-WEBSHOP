@@ -2,33 +2,25 @@
 @import "mixin.scss";
 @import "fonts.scss";
 
-
 .loadingWrapper {
     text-align: center;
-
     .loadingText{
         font-family: 'Lato', sans-serif;
         color: $footertext;
     }
-    
     .loadingDiv {
-        
         text-align: center;
-    
         .loadingLogo{
             height: 50%;
             margin-top: 15%;
-
             @include tablet {
                 margin-top:10%;
             }
-
             @include desktop {
                 margin-top:7%;
             }
         }
-    }
-    
+    } 
     .loading-dots {
         text-align: center;
         margin-top: -100px;
@@ -49,7 +41,6 @@
             &.three { animation-delay: 0.6s; }
         }
     }
-
     @keyframes showHideDot {
         0% { opacity: 0; }
         50% { opacity: 1; }
@@ -57,15 +48,12 @@
         100% { opacity: 0; }
     }
 }
-
 .thankyouBody {
     margin-top:50px;
 }
-
 .emptyDiv{
     height: 40px;
 }
-
 .thankyouFooter {
     position: fixed;
     bottom: 0;

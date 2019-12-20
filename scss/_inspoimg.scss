@@ -3,31 +3,27 @@
 @import "mixin.scss";
 
 body {
-.imgcontainer {
-    margin-top: 5px;
-    margin-bottom: 10px;
-
-    @include tablet {
-        margin-top: 20px;
-    }
-
-    .imgWrapper {
-        padding: 0;
-        padding: 5px;
-    
-        .inspoimg {
-            width: 100%;
+    .imgcontainer {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        @include tablet {
+            margin-top: 20px;
+        }
+        .imgWrapper {
+            padding: 0;
+            padding: 5px;
+        
+            .inspoimg {
+                width: 100%;
+            }
+        }
+        .shopbtn {
+            width: 170px;
+            font-size: 16pt;
         }
     }
-    .shopbtn {
-        width: 170px;
-        font-size: 16pt;
+    .aboutContent {
+        text-align: center;
     }
-}
-
-.aboutContent {
-    text-align: center;
-}
-
 }
 

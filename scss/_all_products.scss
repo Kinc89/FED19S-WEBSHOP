@@ -1,7 +1,6 @@
 @import "mixin.scss";
 @import "colors.scss";
 
-
 .categoryName{
     font-size: 25px;
     z-index: 2;
@@ -18,14 +17,12 @@
         font-size: 54px;
     }
 }
-
 #CategoryDiv{
     text-align: center;
     position: absolute;
     top: 25px;
     right: 30px;
     width: 45%;
-
     @include mini-tablet{
         top: 43px;
     }
@@ -44,7 +41,6 @@
     padding: 0;
     padding: 5px;
     text-align: center;
-
     .productImg{
         width: 100%;
     }
@@ -52,9 +48,7 @@
         border-style: none;
         margin-right: 5px;
         color: $footertext;
-        
     }
-
     .borderLine{
         width: 40px;
         border-left: black solid 1px;
@@ -62,7 +56,6 @@
             margin-left: 10px;
         }
     }
-
     .QuickBtn{
         border-style: none;
         color: $footertext;
@@ -71,5 +64,4 @@
             margin-left: 10px;
         }
     }
-    
 }

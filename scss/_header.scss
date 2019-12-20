@@ -3,46 +3,40 @@
 
 #caruselContainer {
     position: absolute;
-        right: 5%;
-        z-index: 10;
-        top: 10%;
-        color:$headerTextColor;
-        text-align: center;
-        width: 54%;
-    
-        @include mini-tablet{
-            top: 16%;
-            right: 3%; 
-            width: 56%;
-        }
-
-        @include tablet{
-            top: 22%;
-            right: 10%;
-            width: 45%;
-        }
-
-        @include desktop {
-            top: 30%;
-            width: 40%;
-            right:10%;
-        }
+    right: 5%;
+    z-index: 10;
+    top: 10%;
+    color:$headerTextColor;
+    text-align: center;
+    width: 54%;
+    @include mini-tablet{
+        top: 16%;
+        right: 3%; 
+        width: 56%;
+    }
+    @include tablet{
+        top: 22%;
+        right: 10%;
+        width: 45%;
+    }
+    @include desktop {
+        top: 30%;
+        width: 40%;
+        right:10%;
+    }
     .carusel_h1{
         font-size: 20pt;
 
         @include mini-tablet{
             font-size: 30px;
-            
         }
         @include tablet{
             font-size: 40px;
-            
         }
         @include desktop{
             font-size: 50px;
         }
     } 
-
     .carusel_p{
         font-size: 12pt;
 
@@ -51,14 +45,11 @@
         }
         @include tablet{
             font-size: 22px;
-           
         }
         @include desktop{
             font-size: 28px;
-           
         }
     }
-
     .headerBtn{
         font-size: 12pt;
         padding: 2px;
@@ -66,25 +57,18 @@
         color: $headerTextColor;
         border: 2px solid;
         z-index: 15;
-
         @include mini-tablet{
             font-size: 14pt;
             width: 100px;
         }
-
         @include tablet {
-
             top: 300%;
         }
-
         @include desktop{
-
             top:100%;
         }
     }
 }
-
-// Header statisk bild mobil och tablet 
 .static-header {
     img {
         width: 100%;
@@ -96,13 +80,8 @@
 .static-header2 {
     img {
         width: 100%;
- 
     }
-    
 }
-
-
-//Bild carusell
 .carousel_bloomit {
     position: relative;
     margin-right: 0;
@@ -120,7 +99,6 @@
     @include desktop{
         display: inline;
     }
-
     .nomargin {
         padding:0;
     }

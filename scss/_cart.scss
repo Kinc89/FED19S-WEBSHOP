@@ -5,29 +5,21 @@
 .cartBody{
     margin-top:50px;
 }
-
 .cartheader {
     text-align: center;
 }
 .cartwrapperText {
     border-bottom: 2px solid darkgrey;
-    
 }
-
 .cartWrapper {
     margin-top:30px;
-   
-
     .cartProductDiv {
         
         .cartProductImg {
-            margin-top:10px;
-            
+            margin-top:10px; 
         }
-    
         .cartProductInfo {
             margin-top:10px;
-
             .countBtnMinus {
                 font-size: 35px;
             }
@@ -35,34 +27,24 @@
                font-size: 30px;
            }
         }
-
-          
         .cartProductDeleteBtn {
             
             .cartDeleteBtn {
-          
                 width: 100%;
-                font-size: 35px;
-                
+                font-size: 35px;   
             }
         }
     }
-
     .cartTotals {
         height: 400px; 
         border-left: 1px solid darkgrey;
-        
-       
         .totalPriceDiv {
             text-align: end;
         }
     }
-
-
     .addToCheckoutBtnDiv {
         text-align: center;
         margin-top:20px;
-
         .addToCheckoutBtn {
             width: 90%;
         }

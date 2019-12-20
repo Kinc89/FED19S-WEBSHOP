@@ -3,35 +3,28 @@
 
 .oneProductWrapper{
     margin-bottom: 100px;
-    margin-top: 50px;
-     
+    margin-top: 50px;  
 }
-
 .oneProductTextWrapper{
     margin-top: 30px;
 }
-
 .addToCartBtnDiv{
     text-align: center;
 }
-
 .oneProductImg{
     @include desktop {
         margin-left: 60px;
     }
 }
-
 .oneProductDescription{
     text-align: center;
     justify-content: center;
     padding: 20px;
 } 
-
 .oneProductHeader{
     text-align: center;
     font-family: "'Open Sans', sans-serif";
 }
-
 .oneProductPrice{
     text-align: center;
     font-size: 18pt;
