@@ -60,8 +60,11 @@ footer {
           border-left: 1px rgba(148, 147, 147, 0.856) solid;
           border-right: 1px rgba(148, 147, 147, 0.856) solid; } }
       footer .footerdiv .div3 i {
-        margin-top: 45px;
+        margin-top: 15px;
         color: rgba(66, 65, 65, 0.87); }
+        @media (min-width: 820px) {
+          footer .footerdiv .div3 i {
+            margin-top: 45px; } }
     footer .footerdiv .div4 {
       height: 50%;
       text-align: center;
@@ -80,7 +83,7 @@ footer {
   position: absolute;
   right: 5%;
   z-index: 10;
-  top: 10%;
+  top: 7%;
   color: #383737;
   text-align: center;
   width: 54%; }
@@ -378,7 +381,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 50px; }
 
 .emptyDiv {
-  height: 40px; }
+  height: 100px; }
+  @media (min-width: 1200px) {
+    .emptyDiv {
+      height: 70px; } }
 
 .thankyouFooter {
   position: fixed;

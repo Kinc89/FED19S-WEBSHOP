@@ -52,7 +52,10 @@
     margin-top:50px;
 }
 .emptyDiv{
-    height: 40px;
+    height: 100px;
+    @include desktop {
+        height: 70px;
+    }
 }
 .thankyouFooter {
     position: fixed;

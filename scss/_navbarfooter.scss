@@ -29,8 +29,6 @@
         }
     }
 }
-
-
 footer {
     background-color: $footerBG;
     margin-top: 20px; 
@@ -39,7 +37,6 @@ footer {
     }
     .footerdiv {
         height: 200px;
-
         @include tablet {
         height: 150px;
         padding: 20px;
@@ -48,7 +45,6 @@ footer {
     }
         .div1 {
             text-align: center;
-
             p { 
                 color: $footertext;
                 margin-top: 35px;
@@ -71,8 +67,12 @@ footer {
             border-right: 1px $line solid;
             }
             i {
-                margin-top: 45px;
+                margin-top: 15px;
                 color: $footertext;
+
+                @include tablet {
+                    margin-top:45px;
+                }
             }
         }
         .div4 {
